@@ -1,0 +1,189 @@
+:root {
+    --primary-color: #004c6d;
+    --secondary-color: #008f9b;
+    --background-color: #f1f1f1;
+    --text-color: #333;
+    --accent-color: #130906;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #1e4b6d;
+    /* Dark blue background */
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    padding: 20px;
+}
+
+/* Profile container: Centers both image and name */
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Space between image and text */
+    background-color: #2a5d85;
+    /* Slightly lighter blue */
+    padding: 0px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile image */
+.profile-container img {
+    width: 90px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Name text */
+.profile-container h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: black;
+    /* Background color */
+    text-align: center;
+    padding: 10px 0;
+    /* Adds vertical spacing */
+}
+
+/* Navigation list */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    /* Centers the menu */
+    gap: 20px;
+    /* Space between links */
+}
+
+/* Navigation links */
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.1rem;
+    /* Medium font size */
+    text-decoration: none;
+    padding: 8px 15px;
+    /* Medium padding for better clickability */
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #444;
+    /* Slight color change on hover */
+}
+
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* Container for Learning Activities & Information */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack in mobile */
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Container for Learning Activities & Information */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack in mobile */
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 90%;
+    max-width: 320px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings inside Cards */
+.card h3 {
+    background-color: #1e4b6d;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Display in One Row for Larger Screens */
+@media (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+        /* Side by side in larger view */
+        justify-content: center;
+        align-items: flex-start;
+        /* Align content properly */
+    }
+
+    .activities {
+        order: 1;
+        /* Ensure Learning Activities is on the left */
+    }
+
+    .information {
+        order: 2;
+        /* Ensure Information is on the right */
+    }
+
+    .card {
+        width: 45%;
+        /* Adjust width */
+        max-width: 400px;
+    }
+}
+
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px;
+}
