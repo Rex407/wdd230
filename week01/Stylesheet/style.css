@@ -1,0 +1,93 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0047AB; /* Deep Blue */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-plan {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.call-to-action {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.join-btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #FFD700; /* Gold */
+    color: #0047AB; /* Deep Blue */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.join-btn:hover {
+    background-color: #FFC107; /* Slightly darker gold for hover */
+}
+
+section {
+    margin: 20px;
+}
+
+h2 {
+    color: #0047AB; /* Deep Blue */
+}
+
+footer {
+    background-color: #0047AB; /* Deep Blue */
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer span {
+    font-weight: bold;
+}
