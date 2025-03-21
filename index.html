@@ -8,6 +8,7 @@
     <meta name="description"
         content="WDD 230 - Web Frontend Development course assignment portal by Rex J Kapoloma. Access course materials, assignments, and updates all in one place.">
     <meta name="author" content="Rex J Kapoloma">
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,17 +16,22 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
 </head>
 
 <body>
     <header>
-        <div class="profile-container">
-            <img src="images/rex_profile.jpg" alt="Rex J Kapoloma profile" width="75" height="100">
-            <h1>Rex J Kapoloma</h1>
+        <div class="header-content">
+            <div class="profile-container">
+                <img src="images/rex_profile.jpg" alt="Rex J Kapoloma profile" width="75" height="100">
+                <h1>Rex J Kapoloma</h1>
+            </div>
+            <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+            <button id="menuToggle" aria-label="Toggle navigation menu">≡</button>
         </div>
     </header>
 
-    <nav>
+    <nav id="mainNav">
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="#">Chamber</a></li>
@@ -60,9 +66,9 @@
     <footer>
         <p>
             &copy; <span id="currentYear"></span>
-            <span class="icon-wrapper">🏀 Rex J Kapoloma 🏀</span> | 
+            <span class="icon-wrapper">🏀 Rex J Kapoloma 🏀</span> |
             <span class="country-flag">
-                Malawi 
+                Malawi
                 <img src="images/flag-malawi2.png" alt="Malawi flag" class="flag-icon">
             </span>
         </p>
@@ -70,6 +76,8 @@
     </footer>
 
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
 </body>
 
 </html>

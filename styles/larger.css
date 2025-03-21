@@ -1,38 +1,31 @@
 @media screen and (min-width: 768px) {
 
-    @media screen and (min-width: 768px) {
+    /* Header Styles */
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
 
-        /* Header Styles */
-        header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem 2rem;
-        }
+    .profile-container {
+        flex-direction: row;
+        gap: 1rem;
+    }
 
-        .profile-container {
-            flex-direction: row;
-            /* Align image and name horizontally */
-            gap: 1rem;
-        }
+    .profile-container img {
+        width: 100px;
+        height: 100px;
+    }
 
-        .profile-container img {
-            width: 100px;
-            /* Maintain square dimensions */
-            height: 100px;
-            /* Maintain square dimensions */
-        }
-
-        .profile-container h1 {
-            margin: 0;
-        }
+    .profile-container h1 {
+        margin: 0;
     }
 
     /* Navigation Styles */
     nav ul {
         flex-direction: row;
         justify-content: center;
-        /* Center the list items horizontally */
         gap: 2rem;
         padding: 0;
     }
@@ -46,7 +39,6 @@
         color: white;
     }
 
-
     /* Main Content Styles */
     main {
         max-width: 1200px;
@@ -58,8 +50,6 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 2rem;
-        max-width: 1200px;
-        margin: 0 auto;
     }
 
     .card {
@@ -67,26 +57,8 @@
         margin: 0;
     }
 
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
-        gap: 2rem;
-    }
-
-
     /* Footer Styles */
     footer {
-        display: flex;
-        flex-direction: column;
-        /* Stack paragraphs vertically */
-        align-items: center;
-        /* Center content horizontally */
-        justify-content: center;
-        /* Center content vertically */
         padding: 1rem 2rem;
-    }
-
-    footer p {
-        margin: 0.5rem 0;
     }
 }
