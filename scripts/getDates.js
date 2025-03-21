@@ -1,4 +1,7 @@
-console.log("Last modified value:", document.lastModified);
+// Get the current year
+const currentYear = new Date().getFullYear();
+document.getElementById('currentYear').textContent = currentYear;
 
-document.getElementById("lastModified").textContent = 
-    `Last modified: ${document.lastModified}`;
+// Get the last modified date
+const lastModified = document.lastModified;
+document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
