@@ -1,25 +1,11 @@
 @media screen and (min-width: 768px) {
-
     /* Header Styles */
     header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 1rem 2rem;
     }
 
     .profile-container {
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    .profile-container img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .profile-container h1 {
-        margin: 0;
+        margin-top: 0;
     }
 
     /* Navigation Styles */
@@ -55,10 +41,27 @@
     .card {
         max-width: 100%;
         margin: 0;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    .card h3 {
+        background-color: var(--header-bg);
+        color: white;
     }
 
     /* Footer Styles */
     footer {
         padding: 1rem 2rem;
+    }
+
+    /* Dark Mode Adjustments */
+    .dark-mode .card {
+        background-color: #333;
+        color: white;
+    }
+
+    .dark-mode .card h3 {
+        background-color: #444;
     }
 }

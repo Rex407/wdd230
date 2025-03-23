@@ -4,48 +4,85 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Header Styles */
 header {
-    background-color: #3a447c;
+    background-color: var(--header-bg);
     color: white;
     padding: 1rem;
-    text-align: center;
-}
-
-.profile-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
+    position: relative;
+}
+
+/* Dark Mode Button (Left) */
+.dark-mode-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+/* Hamburger Button (Right - Mobile Only) */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+/* Profile Container (Centered) */
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .profile-container img {
-    width: 100px;
+    width: 75px;
     height: 100px;
-    object-fit: cover;
     border: 3px solid rgb(49, 38, 99);
 }
 
 .profile-container h1 {
     margin: 0;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 /* Navigation Styles */
+nav {
+    background-color: var(--nav-bg);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    background-color: #333;
-    padding: 1rem;
-    margin: 0;
 }
 
 nav a {
@@ -55,29 +92,17 @@ nav a {
     display: block;
     text-align: center;
     transition: all 0.3s ease;
-    /* Add transition here */
 }
 
-/* Add hover effect section here */
 nav a:hover {
     color: rgba(255, 165, 0, 0.8);
-    /* Orange text with 80% opacity */
     background-color: rgba(255, 165, 0, 0.1);
-    /* Transparent orange background */
 }
 
 nav a.active {
     font-weight: bold;
     color: #4CAF50;
     background-color: #444;
-}
-
-/* Add touch device adjustment at end of file */
-@media (hover: none) {
-    nav a:hover {
-        color: white;
-        background-color: transparent;
-    }
 }
 
 /* Main Content Styles */
@@ -91,7 +116,7 @@ h2 {
     margin-bottom: 1rem;
 }
 
-/* Updated Card Styles */
+/* Card Styles */
 .card {
     background-color: white;
     padding: 1.5rem;
@@ -119,7 +144,7 @@ h2 {
 
 /* Footer Styles */
 footer {
-    background-color: #3a447c;
+    background-color: var(--header-bg);
     color: white;
     text-align: center;
     padding: 1rem;
@@ -171,39 +196,32 @@ footer p {
     --nav-bg: #222222;
 }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease;
-}
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+    }
 
-header {
-    background-color: var(--header-bg);
-}
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-150%);
+    }
 
-nav {
-    background-color: var(--nav-bg);
-}
+    nav.active {
+        transform: translateY(0);
+    }
 
-#menuToggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    cursor: pointer;
-}
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem;
+    }
 
-#darkModeToggle {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    position: absolute;
-    right: 3.5rem;
-    top: 1rem;
-    cursor: pointer;
+    nav ul li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #444;
+    }
 }

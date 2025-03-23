@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head content as index.html -->
+</head>
+<body>
+    <header>
+        <!-- Same header content as index.html -->
+    </header>
+
+    <nav id="mainNav">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#" class="active">Chamber</a></li>
+            <li><a href="../week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="../form/">Form</a></li>
+        </ul>
+    </nav>
+
+    <main class="discover-main">
+        <div class="discover-grid">
+            <aside class="sidebar">
+                <section class="demographics">
+                    <h2>Lilongwe at a Glance</h2>
+                    <p>Population: 1.1 Million</p>
+                    <p>Average Income: $3,200/year</p>
+                    <p>Founded: 1902</p>
+                </section>
+                
+                <section class="events">
+                    <h2>Upcoming Events</h2>
+                    <ul>
+                        <li>Trade Fair - May 15-20</li>
+                        <li>Business Summit - June 1</li>
+                        <li>Cultural Festival - July 4</li>
+                    </ul>
+                </section>
+
+                <div class="visit-message" id="visitMessage"></div>
+            </aside>
+
+            <div class="gallery">
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/city-hall.jpg" 
+                         alt="Lilongwe City Hall" loading="lazy">
+                    <figcaption>City Hall - Government Center</figcaption>
+                </figure>
+                <!-- Repeat similar figure blocks for 5 more images -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Same footer content as index.html -->
+    </footer>
+
+    <script>
+        // Visit tracking
+        const visitMessage = document.getElementById('visitMessage');
+        const lastVisit = localStorage.getItem('lastVisit');
+        const currentVisit = Date.now();
+
+        if (!lastVisit) {
+            visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+        } else {
+            const daysSince = Math.floor((currentVisit - lastVisit) / (86400000));
+            
+            if (daysSince < 1) {
+                visitMessage.textContent = "Back so soon! Awesome!";
+            } else {
+                visitMessage.textContent = `You last visited ${daysSince} day${daysSince === 1 ? '' : 's'} ago.`;
+            }
+        }
+
+        localStorage.setItem('lastVisit', currentVisit);
+
+        // Lazy loading images
+        const images = document.querySelectorAll('img[data-src]');
+        
+        const imgOptions = {
+            threshold: 0.5,
+            rootMargin: "0px 0px 100px 0px"
+        };
+
+        const loadImages = (image) => {
+            image.setAttribute('src', image.getAttribute('data-src'));
+            image.onload = () => image.removeAttribute('data-src');
+        };
+
+        if ('IntersectionObserver' in window) {
+            const imgObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        loadImages(entry.target);
+                        imgObserver.unobserve(entry.target);
+                    }
+                });
+            }, imgOptions);
+
+            images.forEach(image => imgObserver.observe(image));
+        } else {
+            images.forEach(image => loadImages(image));
+        }
+    </script>
+</body>
+</html>
