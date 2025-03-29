@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
@@ -110,6 +110,7 @@ body {
   width: 100%;
   height: 300px;
   overflow: hidden;
+  background-color: #e6f0fa;
 }
 
 .hero-content {
@@ -122,14 +123,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   display: block;
-  border-radius: 5px; /* Added for a polished look */
+  border-radius: 5px;
 }
 
 .hero-overlay {
@@ -138,7 +133,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,16 +141,31 @@ body {
   text-align: center;
   color: white;
   padding: 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 .hero-overlay h1 {
   font-size: 24px;
   margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .hero-overlay p {
   font-size: 14px;
   margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .cta-btn {
@@ -168,6 +178,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .cta-btn:hover {
@@ -308,6 +319,135 @@ body {
 
 .spotlight-link:hover {
   color: #0088cc;
+}
+
+/* Join Section Styles */
+.join-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.join-section h1 {
+  font-size: 24px;
+  color: #003087;
+  margin-bottom: 20px;
+}
+
+.join-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.join-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.join-form label {
+  display: block;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form select,
+.join-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.join-form textarea {
+  resize: vertical;
+}
+
+.join-form input[type="submit"] {
+  background-color: #00aaff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-form input[type="submit"]:hover {
+  background-color: #0088cc;
+}
+
+.membership-benefits {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.membership-benefits h2 {
+  font-size: 20px;
+  color: #003087;
+  margin-bottom: 15px;
+}
+
+.benefit-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+  font-size: 16px;
+  color: #003087;
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.benefit-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.benefit-card li {
+  margin-bottom: 5px;
+}
+
+/* Thank You Section Styles */
+.thankyou-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.thankyou-section h1 {
+  font-size: 24px;
+  color: #003087;
+  margin-bottom: 20px;
+}
+
+.thankyou-section p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
 }
 
 /* Footer Styles */

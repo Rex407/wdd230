@@ -134,6 +134,75 @@
       font-size: 16px;
   }
 
+  /* Join Section Adjustments */
+  .join-section {
+      padding: 40px;
+  }
+
+  .join-section h1 {
+      font-size: 32px;
+  }
+
+  .join-content {
+      flex-direction: row;
+      align-items: flex-start;
+  }
+
+  .join-form {
+      flex: 1;
+      max-width: 500px;
+      padding: 30px;
+  }
+
+  .join-form label {
+      font-size: 16px;
+  }
+
+  .join-form input[type="text"],
+  .join-form input[type="email"],
+  .join-form input[type="tel"],
+  .join-form select,
+  .join-form textarea {
+      padding: 10px;
+      font-size: 16px;
+  }
+
+  .join-form input[type="submit"] {
+      padding: 12px 24px;
+      font-size: 16px;
+  }
+
+  .membership-benefits {
+      flex: 1;
+      max-width: 500px;
+      padding: 30px;
+  }
+
+  .membership-benefits h2 {
+      font-size: 24px;
+  }
+
+  .benefit-card h3 {
+      font-size: 18px;
+  }
+
+  .benefit-card p, .benefit-card li {
+      font-size: 16px;
+  }
+
+  /* Thank You Section Adjustments */
+  .thankyou-section {
+      padding: 60px 40px;
+  }
+
+  .thankyou-section h1 {
+      font-size: 32px;
+  }
+
+  .thankyou-section p {
+      font-size: 18px;
+  }
+
   /* Footer Adjustments */
   .commerce-footer {
       padding: 30px 40px;
