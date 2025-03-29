@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilongwe Chamber of Commerce | Home</title>
+    <meta name="description" content="Discover the Lilongwe Chamber of Commerce and grow your business through networking and community engagement">
+    <meta name="author" content="Rex J Kapoloma">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/png">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Lilongwe Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lilongwechamber.org/images/preview-image.jpg">
+    <meta property="og:url" content="https://lilongwechamber.org">
+    
+    <!-- CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+        }
+
+        /* Header Styles */
+        .commerce-header {
+            background-color: #e6f0fa;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .commerce-identity h1 {
+            font-size: 24px;
+            color: #003087;
+            font-weight: bold;
+        }
+
+        .commerce-identity h2 {
+            font-size: 14px;
+            color: #003087;
+            font-weight: normal;
+        }
+
+        .social-newsletter {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .social-newsletter a {
+            color: #003087;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .newsletter-btn {
+            background-color: #003087;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Navigation Styles */
+        .top-nav {
+            background-color: #003087;
+            padding: 10px 20px;
+        }
+
+        .top-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .top-nav a {
+            color: #f5c518;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .top-nav a:hover {
+            color: white;
+        }
+
+        /* Hero Section Styles */
+        .hero-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            gap: 40px;
+            background-color: #f9f9f9;
+        }
+
+        .hero-text {
+            max-width: 400px;
+        }
+
+        .hero-text h2 {
+            font-size: 18px;
+            color: #003087;
+            margin-bottom: 10px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            color: #003087;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .cta-btn {
+            background-color: #00aaff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .hero-image img {
+            max-width: 400px;
+            height: auto;
+        }
+
+        /* Footer Styles */
+        .commerce-footer {
+            background-color: #003087;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        .commerce-footer strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="commerce-header">
+        <div class="commerce-identity">
+            <h1>Lilongwe</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
+        <div class="social-newsletter">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook" width="20"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter" width="20"></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn" width="20"></a>
+            <a href="#" class="newsletter-btn">Join Our Newsletter</a>
+        </div>
+    </header>
+
+    <nav class="top-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="directory.html">Business Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-text">
+                <h2>April 2025</h2>
+                <h1>Read the Latest Issue</h1>
+                <p>The Lilongwe Business Journal is the premier publication of the Lilongwe Chamber of Commerce.</p>
+                <button class="cta-btn">Click Here</button>
+            </div>
+            <div class="hero-image">
+                <img src="lilongwe-business-journal.jpg" alt="Lilongwe Business Journal">
+            </div>
+        </section>
+    </main>
+
+    <footer class="commerce-footer">
+        <div class="footer-text">
+            <p>©2025 Lilongwe Chamber of Commerce | <strong>Rex J Kapoloma</strong> | WDD 230 Project | Last Updated: <span id="last-update"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('last-update').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

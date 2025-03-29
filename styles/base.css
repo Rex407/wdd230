@@ -35,7 +35,8 @@ header {
 
 /* Hamburger Button (Right - Mobile Only) */
 .hamburger {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     font-size: 1.5rem;
     background: none;
     border: none;
@@ -199,7 +200,8 @@ footer p {
 /* Mobile Styles */
 @media (max-width: 768px) {
     .hamburger {
-        display: block; /* Show hamburger on mobile */
+        display: block;
+        /* Show hamburger on mobile */
     }
 
     nav {

@@ -1,0 +1,161 @@
+/* styles/larger.css */
+
+/* Styles for screens 768px and larger */
+@media (min-width: 768px) {
+  /* Header Adjustments */
+  .commerce-header {
+      padding: 15px 40px;
+  }
+
+  .commerce-identity h1 {
+      font-size: 28px;
+  }
+
+  .commerce-identity h2 {
+      font-size: 16px;
+  }
+
+  .newsletter-btn {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+
+  /* Navigation Adjustments */
+  .top-nav {
+      padding: 15px 40px;
+  }
+
+  .hamburger {
+      display: none;
+  }
+
+  .nav-menu {
+      display: flex;
+      flex-direction: row;
+      position: static;
+      background: none;
+      width: auto;
+      gap: 20px;
+  }
+
+  .nav-menu li {
+      padding: 0;
+  }
+
+  .nav-menu a {
+      font-size: 16px;
+  }
+
+  /* Hero Section Adjustments */
+  .hero-section {
+      height: 500px;
+  }
+
+  .hero-overlay {
+      padding: 40px;
+  }
+
+  .hero-overlay h1 {
+      font-size: 48px;
+  }
+
+  .hero-overlay p {
+      font-size: 18px;
+  }
+
+  .cta-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+  }
+
+  /* Events and Weather Sections Combined Layout */
+  .events-section, .weather-section {
+      padding: 40px;
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+  }
+
+  .events-section h2, .weather-section h2 {
+      font-size: 24px;
+  }
+
+  .event-card, .weather-card {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+
+  .event-card h3, .weather-card h3 {
+      font-size: 18px;
+  }
+
+  .event-card p, .weather-card p {
+      font-size: 16px;
+  }
+
+  .weather-temp {
+      font-size: 28px;
+  }
+
+  .weather-desc {
+      font-size: 16px;
+  }
+
+  /* Spotlights Section Adjustments */
+  .spotlights-section {
+      padding: 40px;
+  }
+
+  .spotlights-section h2 {
+      font-size: 24px;
+  }
+
+  .spotlights-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+
+  .spotlight-card {
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      margin-bottom: 0;
+      padding: 20px;
+  }
+
+  .spotlight-card h3 {
+      font-size: 18px;
+  }
+
+  .spotlight-card .slogan, .spotlight-card p {
+      font-size: 16px;
+  }
+
+  /* Footer Adjustments */
+  .commerce-footer {
+      padding: 30px 40px;
+      font-size: 14px;
+  }
+
+  .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+  }
+
+  .footer-contact {
+      text-align: left;
+  }
+
+  .footer-contact h3 {
+      font-size: 18px;
+  }
+
+  .footer-text {
+      text-align: right;
+  }
+}

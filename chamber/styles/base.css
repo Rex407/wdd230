@@ -1,0 +1,352 @@
+/* styles/base.css */
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+  color: #333;
+}
+
+/* Header Styles */
+.commerce-header {
+  background-color: #e6f0fa;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commerce-identity h1 {
+  font-size: 24px;
+  color: #003087;
+  font-weight: bold;
+}
+
+.commerce-identity h2 {
+  font-size: 14px;
+  color: #003087;
+  font-weight: normal;
+}
+
+.social-newsletter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-newsletter a {
+  color: #003087;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.newsletter-btn {
+  background-color: #003087;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Navigation Styles */
+.top-nav {
+  background-color: #003087;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.hamburger {
+  display: block;
+  background: none;
+  border: none;
+  color: #f5c518;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  background-color: #003087;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-menu.active {
+  display: flex;
+}
+
+.nav-menu li {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.nav-menu a {
+  color: #f5c518;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-menu a:hover {
+  color: white;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero-overlay h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.cta-btn {
+  background-color: #00aaff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background-color: #0088cc;
+}
+
+/* Events Section Styles */
+.events-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.events-section h2 {
+  font-size: 20px;
+  color: #003087;
+  margin-bottom: 15px;
+}
+
+.event-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.event-card h3 {
+  font-size: 16px;
+  color: #003087;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.event-link {
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.event-link:hover {
+  color: #0088cc;
+}
+
+/* Weather Section Styles */
+.weather-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.weather-section h2 {
+  font-size: 20px;
+  color: #003087;
+  margin-bottom: 15px;
+}
+
+.weather-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.weather-card h3 {
+  font-size: 16px;
+  color: #003087;
+  margin-bottom: 10px;
+}
+
+.weather-temp {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.weather-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.weather-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Spotlights Section Styles */
+.spotlights-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.spotlights-section h2 {
+  font-size: 20px;
+  color: #003087;
+  margin-bottom: 15px;
+}
+
+.spotlight-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.spotlight-card h3 {
+  font-size: 16px;
+  color: #003087;
+  margin-bottom: 10px;
+}
+
+.spotlight-card .slogan {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.spotlight-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.spotlight-link {
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.spotlight-link:hover {
+  color: #0088cc;
+}
+
+/* Footer Styles */
+.commerce-footer {
+  background-color: #003087;
+  color: white;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-contact {
+  text-align: center;
+}
+
+.footer-contact h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  margin-bottom: 5px;
+}
+
+.footer-contact a {
+  color: #f5c518;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: white;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+.footer-text strong {
+  font-weight: bold;
+}
+
+#last-update {
+  font-style: italic;
+}
