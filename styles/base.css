@@ -145,14 +145,14 @@ main {
     width: 100%;
     height: auto;
     display: block;
-    aspect-ratio: 2 / 3; /* Default for mobile (portrait) */
+    aspect-ratio: 2 / 3; /* Mobile view (400x600px) */
 }
 
 .temple-overlay {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7); /* Increased opacity for better contrast */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -162,6 +162,7 @@ main {
 .temple-overlay h2 {
     font-size: 18px;
     margin: 0;
+    color: #ffffff; /* White text for contrast */
 }
 
 h2 {
@@ -221,7 +222,7 @@ h2 {
 
 .card p {
     font-size: 16px;
-    color: #666;
+    color: #333; /* Darker color for better contrast against white background */
     margin-bottom: 10px;
 }
 

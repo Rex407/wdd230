@@ -54,7 +54,7 @@
     }
 
     .temple-hero picture img {
-        aspect-ratio: 16 / 9; /* Landscape for larger views */
+        aspect-ratio: 16 / 9; /* Larger view (960x540px) */
     }
 
     .temple-overlay h2 {
@@ -91,6 +91,7 @@
 
     .card p {
         font-size: 18px;
+        color: #333; /* Ensure contrast in larger view */
     }
 
     .map-section iframe {
@@ -111,5 +112,9 @@
 
     .dark-mode .card h3 {
         background-color: #444;
+    }
+
+    .dark-mode .card p {
+        color: #ddd; /* Lighter color for contrast in dark mode */
     }
 }

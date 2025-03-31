@@ -44,8 +44,12 @@
     <main>
         <!-- Hero Image Section -->
         <section class="temple-hero">
-            <img src="images/temple_rendering_grand_rapids_michigan_temple5.webp" alt="Michigan Temple" width="960"
-                height="540" loading="eager">
+            <picture>
+                <source media="(max-width: 767px)" srcset="images/mobile view.webp" width="400" height="600">
+                <source media="(min-width: 768px)" srcset="images/Michigan Temple-large.webp" width="960" height="540">
+                <img src="images/temple_rendering_grand_rapids_michigan_temple5.webp" alt="Michigan Temple" width="960"
+                    height="540" loading="eager">
+            </picture>
             <div class="temple-overlay">
                 <h2>Michigan Temple</h2>
             </div>
@@ -68,7 +72,7 @@
                 <h3>Information</h3>
                 <p>Lilongwe, Malawi</p>
                 <p>🌞 76°F - Sunshine</p>
-                <p>Page Visits: <span id="page-visits">0</span></p>
+                <p>Page Visits: <span id="visit-counter">0</span></p>
             </section>
         </div>
 
@@ -76,7 +80,7 @@
             <h3>Map of Lilongwe, Malawi</h3>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15199.314664614614!2d33.7741195!3d-13.9626121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x191b7e7e7e7e7e7e%3A0x7e7e7e7e7e7e7e7e!2sLilongwe%2C%20Malawi!5e0!3m2!1sen!2sus!4v1698771234567!5m2!1sen!2sus"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </section>
@@ -98,12 +102,13 @@
     <script src="scripts/app.js"></script>
     <script>
         // Page Visit Counter
-        document.addEventListener('DOMContentLoaded', () => {
+        function updateVisitCounter() {
             let visits = localStorage.getItem('pageVisits') || 0;
             visits = parseInt(visits) + 1;
             localStorage.setItem('pageVisits', visits);
-            document.getElementById('page-visits').textContent = visits;
-        });
+            document.getElementById('visit-counter').textContent = visits;
+        }
+        updateVisitCounter();
     </script>
 </body>
 
