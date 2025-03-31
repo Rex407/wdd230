@@ -1,3 +1,6 @@
+/* styles/larger.css */
+
+/* Styles for screens 768px and larger */
 @media screen and (min-width: 768px) {
     /* Header Styles */
     header {
@@ -8,8 +11,22 @@
         margin-top: 0;
     }
 
+    .profile-container h1 {
+        font-size: 24px;
+    }
+
+    .profile-container img {
+        width: 100px;
+        height: 133px;
+    }
+
     /* Navigation Styles */
+    nav {
+        padding: 1rem 2rem;
+    }
+
     nav ul {
+        display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 2rem;
@@ -25,11 +42,27 @@
         color: white;
     }
 
+    .hamburger {
+        display: none;
+    }
+
     /* Main Content Styles */
     main {
         max-width: 1200px;
         margin: 0 auto;
         padding: 2rem;
+    }
+
+    .temple-hero picture img {
+        aspect-ratio: 16 / 9; /* Landscape for larger views */
+    }
+
+    .temple-overlay h2 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 32px;
     }
 
     .main-container {
@@ -43,16 +76,31 @@
         margin: 0;
         background-color: var(--bg-color);
         color: var(--text-color);
+        padding: 30px;
     }
 
     .card h3 {
         background-color: var(--header-bg);
         color: white;
+        font-size: 24px;
+    }
+
+    .card ul li {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    .map-section iframe {
+        height: 450px;
     }
 
     /* Footer Styles */
     footer {
         padding: 1rem 2rem;
+        font-size: 16px;
     }
 
     /* Dark Mode Adjustments */
