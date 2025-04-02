@@ -45,6 +45,13 @@ body {
   font-size: 14px;
 }
 
+.social-newsletter img {
+  width: 20px;
+  height: 20px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
 .newsletter-btn {
   background-color: #003087;
   color: white;
@@ -147,12 +154,13 @@ body {
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
+
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -448,6 +456,109 @@ body {
   font-size: 16px;
   color: #666;
   margin-bottom: 20px;
+}
+
+/* Discover Page Styles */
+.discover-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  color: #003087;
+  margin-bottom: 15px;
+}
+
+.visit-message {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #e6f0fa;
+  border-radius: 5px;
+}
+
+.visit-message p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.demographics,
+.attractions,
+.events {
+  margin-bottom: 20px;
+}
+
+.demographics h3,
+.attractions h3,
+.events h3 {
+  font-size: 16px;
+  color: #003087;
+  margin-bottom: 10px;
+}
+
+.demographics p,
+.attractions ul,
+.events ul {
+  font-size: 14px;
+  color: #666;
+}
+
+.attractions ul,
+.events ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.attractions li,
+.events li {
+  margin-bottom: 5px;
+}
+
+.gallery {
+  padding: 20px;
+}
+
+.gallery h2 {
+  font-size: 20px;
+  color: #003087;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.photo-gallery figure {
+  margin: 0;
+  text-align: center;
+}
+
+.photo-gallery img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  /* All images are 400x300px */
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.photo-gallery figcaption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
 }
 
 /* Footer Styles */

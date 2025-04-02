@@ -2,229 +2,282 @@
 
 /* Styles for screens 768px and larger */
 @media (min-width: 768px) {
-  /* Header Adjustments */
-  .commerce-header {
-      padding: 15px 40px;
-  }
+    /* Header Adjustments */
+    .commerce-header {
+        padding: 15px 40px;
+    }
 
-  .commerce-identity h1 {
-      font-size: 28px;
-  }
+    .commerce-identity h1 {
+        font-size: 28px;
+    }
 
-  .commerce-identity h2 {
-      font-size: 16px;
-  }
+    .commerce-identity h2 {
+        font-size: 16px;
+    }
 
-  .newsletter-btn {
-      padding: 10px 20px;
-      font-size: 14px;
-  }
+    .newsletter-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 
-  /* Navigation Adjustments */
-  .top-nav {
-      padding: 15px 40px;
-  }
+    /* Navigation Adjustments */
+    .top-nav {
+        padding: 15px 40px;
+    }
 
-  .hamburger {
-      display: none;
-  }
+    .hamburger {
+        display: none;
+    }
 
-  .nav-menu {
-      display: flex;
-      flex-direction: row;
-      position: static;
-      background: none;
-      width: auto;
-      gap: 20px;
-  }
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+        width: auto;
+        gap: 20px;
+    }
 
-  .nav-menu li {
-      padding: 0;
-  }
+    .nav-menu li {
+        padding: 0;
+    }
 
-  .nav-menu a {
-      font-size: 16px;
-  }
+    .nav-menu a {
+        font-size: 16px;
+    }
 
-  /* Hero Section Adjustments */
-  .hero-section {
-      height: 500px;
-  }
+    /* Hero Section Adjustments */
+    .hero-section {
+        height: 500px;
+    }
 
-  .hero-overlay {
-      padding: 40px;
-  }
+    .hero-overlay {
+        padding: 40px;
+    }
 
-  .hero-overlay h1 {
-      font-size: 48px;
-  }
+    .hero-overlay h1 {
+        font-size: 48px;
+    }
 
-  .hero-overlay p {
-      font-size: 18px;
-  }
+    .hero-overlay p {
+        font-size: 18px;
+    }
 
-  .cta-btn {
-      padding: 10px 20px;
-      font-size: 16px;
-  }
+    .cta-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
 
-  /* Events and Weather Sections Combined Layout */
-  .events-section, .weather-section {
-      padding: 40px;
-      display: inline-block;
-      vertical-align: top;
-      width: 50%;
-  }
+    /* Events and Weather Sections Combined Layout */
+    .events-section, .weather-section {
+        padding: 40px;
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+    }
 
-  .events-section h2, .weather-section h2 {
-      font-size: 24px;
-  }
+    .events-section h2, .weather-section h2 {
+        font-size: 24px;
+    }
 
-  .event-card, .weather-card {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-  }
+    .event-card, .weather-card {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+    }
 
-  .event-card h3, .weather-card h3 {
-      font-size: 18px;
-  }
+    .event-card h3, .weather-card h3 {
+        font-size: 18px;
+    }
 
-  .event-card p, .weather-card p {
-      font-size: 16px;
-  }
+    .event-card p, .weather-card p {
+        font-size: 16px;
+    }
 
-  .weather-temp {
-      font-size: 28px;
-  }
+    .weather-temp {
+        font-size: 28px;
+    }
 
-  .weather-desc {
-      font-size: 16px;
-  }
+    .weather-desc {
+        font-size: 16px;
+    }
 
-  /* Spotlights Section Adjustments */
-  .spotlights-section {
-      padding: 40px;
-  }
+    /* Spotlights Section Adjustments */
+    .spotlights-section {
+        padding: 40px;
+    }
 
-  .spotlights-section h2 {
-      font-size: 24px;
-  }
+    .spotlights-section h2 {
+        font-size: 24px;
+    }
 
-  .spotlights-section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-  }
+    .spotlights-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
 
-  .spotlight-card {
-      flex: 1;
-      min-width: 250px;
-      max-width: 300px;
-      margin-bottom: 0;
-      padding: 20px;
-  }
+    .spotlight-card {
+        flex: 1;
+        min-width: 250px;
+        max-width: 300px;
+        margin-bottom: 0;
+        padding: 20px;
+    }
 
-  .spotlight-card h3 {
-      font-size: 18px;
-  }
+    .spotlight-card h3 {
+        font-size: 18px;
+    }
 
-  .spotlight-card .slogan, .spotlight-card p {
-      font-size: 16px;
-  }
+    .spotlight-card .slogan, .spotlight-card p {
+        font-size: 16px;
+    }
 
-  /* Join Section Adjustments */
-  .join-section {
-      padding: 40px;
-  }
+    /* Join Section Adjustments */
+    .join-section {
+        padding: 40px;
+    }
 
-  .join-section h1 {
-      font-size: 32px;
-  }
+    .join-section h1 {
+        font-size: 32px;
+    }
 
-  .join-content {
-      flex-direction: row;
-      align-items: flex-start;
-  }
+    .join-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
 
-  .join-form {
-      flex: 1;
-      max-width: 500px;
-      padding: 30px;
-  }
+    .join-form {
+        flex: 1;
+        max-width: 500px;
+        padding: 30px;
+    }
 
-  .join-form label {
-      font-size: 16px;
-  }
+    .join-form label {
+        font-size: 16px;
+    }
 
-  .join-form input[type="text"],
-  .join-form input[type="email"],
-  .join-form input[type="tel"],
-  .join-form select,
-  .join-form textarea {
-      padding: 10px;
-      font-size: 16px;
-  }
+    .join-form input[type="text"],
+    .join-form input[type="email"],
+    .join-form input[type="tel"],
+    .join-form select,
+    .join-form textarea {
+        padding: 10px;
+        font-size: 16px;
+    }
 
-  .join-form input[type="submit"] {
-      padding: 12px 24px;
-      font-size: 16px;
-  }
+    .join-form input[type="submit"] {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
 
-  .membership-benefits {
-      flex: 1;
-      max-width: 500px;
-      padding: 30px;
-  }
+    .membership-benefits {
+        flex: 1;
+        max-width: 500px;
+        padding: 30px;
+    }
 
-  .membership-benefits h2 {
-      font-size: 24px;
-  }
+    .membership-benefits h2 {
+        font-size: 24px;
+    }
 
-  .benefit-card h3 {
-      font-size: 18px;
-  }
+    .benefit-card h3 {
+        font-size: 18px;
+    }
 
-  .benefit-card p, .benefit-card li {
-      font-size: 16px;
-  }
+    .benefit-card p, .benefit-card li {
+        font-size: 16px;
+    }
 
-  /* Thank You Section Adjustments */
-  .thankyou-section {
-      padding: 60px 40px;
-  }
+    /* Thank You Section Adjustments */
+    .thankyou-section {
+        padding: 60px 40px;
+    }
 
-  .thankyou-section h1 {
-      font-size: 32px;
-  }
+    .thankyou-section h1 {
+        font-size: 32px;
+    }
 
-  .thankyou-section p {
-      font-size: 18px;
-  }
+    .thankyou-section p {
+        font-size: 18px;
+    }
 
-  /* Footer Adjustments */
-  .commerce-footer {
-      padding: 30px 40px;
-      font-size: 14px;
-  }
+    /* Discover Page Adjustments */
+    .discover-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr; /* Sidebar takes 1/4, gallery takes 3/4 */
+        gap: 30px;
+        padding: 40px;
+    }
 
-  .footer-content {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 20px;
-  }
+    .sidebar {
+        padding: 30px;
+    }
 
-  .footer-contact {
-      text-align: left;
-  }
+    .sidebar h2 {
+        font-size: 24px;
+    }
 
-  .footer-contact h3 {
-      font-size: 18px;
-  }
+    .visit-message p {
+        font-size: 16px;
+    }
 
-  .footer-text {
-      text-align: right;
-  }
+    .demographics h3, .attractions h3, .events h3 {
+        font-size: 18px;
+    }
+
+    .demographics p, .attractions li, .events li {
+        font-size: 16px;
+    }
+
+    .gallery {
+        padding: 30px;
+    }
+
+    .gallery h2 {
+        font-size: 24px;
+    }
+
+    .photo-gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for larger views */
+    }
+
+    .photo-gallery img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .photo-gallery img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .photo-gallery figcaption {
+        font-size: 16px;
+    }
+
+    /* Footer Adjustments */
+    .commerce-footer {
+        padding: 30px 40px;
+        font-size: 14px;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .footer-contact {
+        text-align: left;
+    }
+
+    .footer-contact h3 {
+        font-size: 18px;
+    }
+
+    .footer-text {
+        text-align: right;
+    }
 }
