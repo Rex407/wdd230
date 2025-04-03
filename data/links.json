@@ -1,0 +1,40 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                { "url": "/week01/chamber-site-plan.html", "title": "Chamber Site Plan" }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                { "url": "/chamber/index.html", "title": "Chamber Home" }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                { "url": "/chamber/discover.html", "title": "Discover Page" }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                { "url": "/week04/directory.html", "title": "Directory Page" }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                { "url": "/form.html", "title": "Membership Form" }
+            ]
+        },
+        {
+            "week": "Week 6",
+            "links": [
+                { "url": "#", "title": "Placeholder Activity" }
+            ]
+        }
+    ]
+}

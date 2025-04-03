@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rex J Kapoloma - WDD 230 - Form Submission Confirmation</title>
+    <meta name="description"
+        content="Confirmation of your membership form submission for Rex J Kapoloma's WDD 230 portal.">
+    <meta name="author" content="Rex J Kapoloma">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-left">
+                <button class="hamburger" aria-label="Toggle navigation menu">≡</button>
+                <button class="dark-mode-toggle" aria-label="Toggle dark mode">🌓</button>
+            </div>
+            <div class="profile-container">
+                <img src="images/rex_profile.jpg" alt="Rex J Kapoloma profile" width="75" height="100" loading="eager">
+                <h1>Rex J Kapoloma</h1>
+            </div>
+        </div>
+    </header>
+
+    <nav id="mainNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/discover.html">Discover</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html" class="active">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="confirmation-section">
+            <h1>Thank You!</h1>
+            <p>Your membership application has been successfully submitted. We will review your information and get back to you soon.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentYear"></span>
+            <span class="icon-wrapper">🏀 Rex J Kapoloma 🏀</span> |
+            <span class="country-flag">
+                Malawi
+                <img src="images/flag-malawi2.png" alt="Malawi flag" class="flag-icon" loading="lazy">
+            </span>
+        </p>
+        <p id="lastModified">Last Modified: </p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

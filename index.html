@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +36,7 @@
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="/chamber/index.html">Chamber</a></li>
             <li><a href="/week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
+            <li><a href="form.html">Form</a></li>
         </ul>
     </nav>
 
@@ -57,22 +56,16 @@
 
         <h2>WDD 230: Web Frontend Development</h2>
         <div class="main-container">
-            <section class="card">
-                <h3>Learning Activities</h3>
-                <ul>
-                    <li><a href="#"><strong>Week 01:</strong> Home Page Development</a></li>
-                    <li><a href="#"><strong>Week 02</strong></a></li>
-                    <li><a href="#"><strong>Week 03</strong></a></li>
-                    <li><a href="#"><strong>Week 04</strong></a></li>
-                    <li><a href="#"><strong>Week 05</strong></a></li>
-                    <li><a href="#"><strong>Week 06</strong></a></li>
-                </ul>
+            <section class="card weather-card">
+                <h3>Weather in Lilongwe, Malawi</h3>
+                <p>Current Temperature: <span id="current-temp">Loading...</span>°C</p>
+                <p>Condition: <span id="weather-desc">Loading...</span></p>
+                <img id="weather-icon" src="" alt="Weather icon" width="50" height="50">
             </section>
-            <section class="card">
-                <h3>Information</h3>
-                <p>Lilongwe, Malawi</p>
-                <p>🌞 76°F - Sunshine</p>
-                <p>Page Visits: <span id="visit-counter">0</span></p>
+
+            <section class="card activity-links">
+                <h3>Learning Activities</h3>
+                <div id="activity-links-container"></div>
             </section>
         </div>
 
@@ -100,6 +93,8 @@
 
     <script src="scripts/getDates.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
     <script>
         // Page Visit Counter
         function updateVisitCounter() {
@@ -111,5 +106,4 @@
         updateVisitCounter();
     </script>
 </body>
-
 </html>
