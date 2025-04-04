@@ -1,37 +1,43 @@
 {
     "weeks": [
         {
-            "week": "Week 1",
+            "week": "Week 01: Basic HTML and CSS",
             "links": [
-                { "url": "/week01/chamber-site-plan.html", "title": "Chamber Site Plan" }
+                { "url": "/week01/grail.html", "title": "Grail" },
+                { "url": "/week01/media-query.html", "title": "Media Query" }
             ]
         },
         {
-            "week": "Week 2",
+            "week": "Week 02: JavaScript Basics",
             "links": [
-                { "url": "/chamber/index.html", "title": "Chamber Home" }
+                { "url": "/week02/design.html", "title": "Design" },
+                { "url": "/week02/menu.html", "title": "Menu" },
+                { "url": "/week02/bom.html", "title": "BOM-25" }
             ]
         },
         {
-            "week": "Week 3",
+            "week": "Week 03: Advanced Web Features",
             "links": [
-                { "url": "/chamber/discover.html", "title": "Discover Page" }
+                { "url": "/week03/webp.html", "title": "WebP" },
+                { "url": "/week03/lazy.html", "title": "Lazy" },
+                { "url": "/week03/srcset.html", "title": "Srcset" },
+                { "url": "/week03/localstorage.html", "title": "LocalStorage" }
             ]
         },
         {
-            "week": "Week 4",
+            "week": "Week 04: Directory Development",
             "links": [
                 { "url": "/week04/directory.html", "title": "Directory Page" }
             ]
         },
         {
-            "week": "Week 5",
+            "week": "Week 05: Form Handling",
             "links": [
                 { "url": "/form.html", "title": "Membership Form" }
             ]
         },
         {
-            "week": "Week 6",
+            "week": "Week 06: Final Project",
             "links": [
                 { "url": "#", "title": "Placeholder Activity" }
             ]

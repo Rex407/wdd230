@@ -313,3 +313,21 @@ footer p {
         border-bottom: 1px solid #444;
     }
 }
+
+.activity-links p {
+    font-size: 16px;
+    color: var(--card-text);
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.activity-links a {
+    color: #00aaff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.activity-links a:hover {
+    color: #0088cc;
+    text-decoration: underline;
+}

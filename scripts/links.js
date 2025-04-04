@@ -31,7 +31,7 @@ function displayLinks(weeks) {
 
     weeks.forEach(week => {
         const p = document.createElement("p");
-        let weekText = `${week.week}: `;
+        p.textContent = `${week.week}: `; // Add the week number
         week.links.forEach((link, index) => {
             const a = document.createElement("a");
             a.href = `${baseURL}${link.url}`;
