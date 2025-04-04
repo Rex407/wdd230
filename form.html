@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="header-content">
@@ -54,8 +56,7 @@
                 <!-- Password -->
                 <div class="form-group">
                     <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required
-                        pattern="[a-zA-Z0-9]{8,}"
+                    <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}"
                         title="Password must be at least 8 characters long and contain only letters and numbers">
                 </div>
 
@@ -68,10 +69,10 @@
 
                 <!-- Email -->
                 <div class="form-group">
-                    <label for="email">Email (BYUI domain only):</label>
+                    <label for="email">Email (BYUI or BYU-Pathway domain only):</label>
                     <input type="email" id="email" name="email" required
-                        pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$"
-                        title="Please enter a valid email address from the byui.edu domain">
+                        pattern="[a-zA-Z0-9._%+\-]+@(byui|byupathway)\.edu$"
+                        title="Please enter a valid email address from the byui.edu or byupathway.edu domain">
                 </div>
 
                 <!-- Page Rating -->
@@ -93,7 +94,7 @@
             <span class="icon-wrapper">🏀 Rex J Kapoloma 🏀</span> |
             <span class="country-flag">
                 Malawi
-                <img src="images/flag-malawi2.webp" alt="Malawi flag" class="flag-icon" loading="lazy">
+                <img src="images/flag-malawi2.png" alt="Malawi flag" class="flag-icon" loading="lazy">
             </span>
         </p>
         <p id="lastModified">Last Modified: </p>
@@ -134,4 +135,5 @@
         });
     </script>
 </body>
+
 </html>
