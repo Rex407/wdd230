@@ -19,18 +19,22 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 10;
 }
 
 .commerce-identity h1 {
   font-size: 24px;
   color: #003087;
   font-weight: bold;
+  margin: 0;
 }
 
 .commerce-identity h2 {
   font-size: 14px;
   color: #003087;
   font-weight: normal;
+  margin: 0;
 }
 
 .social-newsletter {
@@ -60,6 +64,11 @@ body {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
+  text-decoration: none;
+}
+
+.newsletter-btn:hover {
+  background-color: #002060;
 }
 
 /* Navigation Styles */
@@ -67,6 +76,7 @@ body {
   background-color: #003087;
   padding: 10px 20px;
   position: relative;
+  z-index: 5;
 }
 
 .hamburger {
@@ -76,6 +86,13 @@ body {
   color: #f5c518;
   font-size: 24px;
   cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+
+.hamburger:hover {
+  color: white;
 }
 
 .nav-menu {
@@ -109,6 +126,148 @@ body {
 
 .nav-menu a:hover {
   color: white;
+}
+
+.nav-menu a.active {
+  color: #f5c518;
+  background-color: #002060;
+}
+
+/* Main Content Styles */
+main {
+  padding: 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Directory Section Styles */
+.directory-section {
+  padding: 1rem;
+  text-align: center;
+}
+
+.directory-section h1 {
+  font-size: 24px;
+  color: #003087;
+  margin-bottom: 20px;
+}
+
+/* View Toggle Buttons */
+.view-toggle {
+  margin-bottom: 20px;
+}
+
+.view-btn {
+  background-color: #003087;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #002060;
+}
+
+.view-btn.active {
+  background-color: #f5c518;
+  color: #003087;
+}
+
+/* Grid View Styles */
+.grid-view {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.member-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.member-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.member-card h3 {
+  font-size: 16px;
+  color: #003087;
+  margin-bottom: 10px;
+}
+
+.member-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.member-card a {
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.member-card a:hover {
+  color: #0088cc;
+}
+
+/* List View Styles */
+.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.member-list-item {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.member-list-item h3 {
+  font-size: 16px;
+  color: #003087;
+  margin-bottom: 5px;
+}
+
+/* Corrected typo from paddingA to padding */
+.weather-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.member-list-item p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.member-list-item a {
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.member-list-item a:hover {
+  color: #0088cc;
 }
 
 /* Hero Section Styles */
@@ -244,15 +403,6 @@ body {
   font-size: 20px;
   color: #003087;
   margin-bottom: 15px;
-}
-
-.weather-card {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  paddingA: 15px;
-  max-width: 300px;
-  margin: 0 auto;
 }
 
 .weather-card h3 {
@@ -459,143 +609,186 @@ body {
 
 /* Discover Page Styles */
 .discover-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
 }
 
 .sidebar {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar h2 {
-    font-size: 20px;
-    color: #003087;
-    margin-bottom: 15px;
+  font-size: 20px;
+  color: #003087;
+  margin-bottom: 15px;
 }
 
 .visit-message {
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #e6f0fa;
-    border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #e6f0fa;
+  border-radius: 5px;
 }
 
 .visit-message p {
-    margin: 0;
-    font-size: 14px;
-    color: #333;
+  margin: 0;
+  font-size: 14px;
+  color: #333;
 }
 
 .demographics, .attractions, .events {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .demographics h3, .attractions h3, .events h3 {
-    font-size: 16px;
-    color: #003087;
-    margin-bottom: 10px;
+  font-size: 16px;
+  color: #003087;
+  margin-bottom: 10px;
 }
 
 .demographics p, .attractions ul, .events ul {
-    font-size: 14px;
-    color: #666;
+  font-size: 14px;
+  color: #666;
 }
 
 .attractions ul, .events ul {
-    list-style: disc;
-    padding-left: 20px;
+  list-style: disc;
+  padding-left: 20px;
 }
 
 .attractions li, .events li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .gallery {
-    padding: 20px;
+  padding: 20px;
 }
 
 .gallery h2 {
-    font-size: 20px;
-    color: #003087;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 20px;
+  color: #003087;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .photo-gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .photo-gallery figure {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
 }
 
 .photo-gallery img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 3; /* All images are 400x300px */
-    border-radius: 5px;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3; /* All images are 400x300px */
+  border-radius: 5px;
+  object-fit: cover;
 }
 
 .photo-gallery figcaption {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #666;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
 }
 
 /* Footer Styles */
 .commerce-footer {
-    background-color: #003087;
-    color: white;
-    padding: 20px;
-    font-size: 12px;
+  background-color: #003087;
+  color: white;
+  padding: 20px;
+  font-size: 12px;
 }
 
 .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .footer-contact {
-    text-align: center;
+  text-align: center;
 }
 
 .footer-contact h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .footer-contact p {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .footer-contact a {
-    color: #f5c518;
-    text-decoration: none;
+  color: #f5c518;
+  text-decoration: none;
 }
 
 .footer-contact a:hover {
-    color: white;
+  color: white;
 }
 
 .footer-text {
-    text-align: center;
+  text-align: center;
 }
 
 .footer-text strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #last-update {
-    font-style: italic;
+  font-style: italic;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hamburger {
+      display: block;
+  }
+
+  .nav-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-100%);
+      z-index: 15;
+      background-color: #003087;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .nav-menu.active {
+      transform: translateY(0);
+  }
+
+  .nav-menu li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .nav-menu a {
+      font-size: 1.2rem;
+  }
+
+  .commerce-header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .social-newsletter {
+      margin-top: 1rem;
+  }
 }

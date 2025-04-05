@@ -5,6 +5,9 @@
     /* Header Adjustments */
     .commerce-header {
         padding: 15px 40px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .commerce-identity h1 {
@@ -15,6 +18,11 @@
         font-size: 16px;
     }
 
+    .social-newsletter {
+        position: static;
+        gap: 1rem;
+    }
+
     .newsletter-btn {
         padding: 10px 20px;
         font-size: 14px;
@@ -23,6 +31,9 @@
     /* Navigation Adjustments */
     .top-nav {
         padding: 15px 40px;
+        position: static;
+        transform: none;
+        z-index: 5;
     }
 
     .hamburger {
@@ -33,7 +44,7 @@
         display: flex;
         flex-direction: row;
         position: static;
-        background: none;
+        background-color: #003087; /* Override 'background: none' to maintain consistency with base.css */
         width: auto;
         gap: 20px;
     }
@@ -43,6 +54,61 @@
     }
 
     .nav-menu a {
+        font-size: 16px;
+    }
+
+    .nav-menu a.active {
+        color: #f5c518;
+        background-color: #002060;
+    }
+
+    /* Main Content Styles */
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+        z-index: 1;
+    }
+
+    /* Directory Section Adjustments */
+    .directory-section {
+        padding: 2rem;
+    }
+
+    .directory-section h1 {
+        font-size: 32px;
+    }
+
+    .view-btn {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+
+    .grid-view {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for larger views */
+    }
+
+    .member-card {
+        padding: 2rem;
+    }
+
+    .member-card h3 {
+        font-size: 18px;
+    }
+
+    .member-card p {
+        font-size: 16px;
+    }
+
+    .member-list-item {
+        padding: 1.5rem;
+    }
+
+    .member-list-item h3 {
+        font-size: 18px;
+    }
+
+    .member-list-item p {
         font-size: 16px;
     }
 
@@ -105,17 +171,14 @@
     /* Spotlights Section Adjustments */
     .spotlights-section {
         padding: 40px;
-    }
-
-    .spotlights-section h2 {
-        font-size: 24px;
-    }
-
-    .spotlights-section {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
+    }
+
+    .spotlights-section h2 {
+        font-size: 24px;
     }
 
     .spotlight-card {
