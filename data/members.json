@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Lilongwe Tech Solutions",
+            "address": "123 Tech Road, Lilongwe, Malawi",
+            "phone": "+265 999 123 456",
+            "website": "https://lilongwetechsolutions.mw",
+            "image": "tech_solutions.png",
+            "membershipLevel": "Gold",
+            "description": "Leading provider of IT services and software development in Lilongwe."
+        },
+        {
+            "name": "Malawi Agro Farms",
+            "address": "456 Farm Lane, Lilongwe, Malawi",
+            "phone": "+265 888 654 321",
+            "website": "https://malawiagrofarms.mw",
+            "image": "agro_farms.png",
+            "membershipLevel": "Silver",
+            "description": "Sustainable farming and agricultural products for local and export markets."
+        },
+        {
+            "name": "Sunrise Bakery",
+            "address": "789 Bread Street, Lilongwe, Malawi",
+            "phone": "+265 777 987 654",
+            "website": "https://sunrisebakery.mw",
+            "image": "bakery.png",
+            "membershipLevel": "Bronze",
+            "description": "Freshly baked goods daily, specializing in artisan breads and pastries."
+        },
+        {
+            "name": "Eco Energy Malawi",
+            "address": "101 Solar Avenue, Lilongwe, Malawi",
+            "phone": "+265 999 456 789",
+            "website": "https://ecoenergymalawi.mw",
+            "image": "eco_energy.png",
+            "membershipLevel": "Gold",
+            "description": "Renewable energy solutions, focusing on solar power installations."
+        },
+        {
+            "name": "Lilongwe Fashion Hub",
+            "address": "202 Style Boulevard, Lilongwe, Malawi",
+            "phone": "+265 888 321 654",
+            "website": "https://lilongwefashionhub.mw",
+            "image": "fashion_hub.png",
+            "membershipLevel": "Silver",
+            "description": "Showcasing local designers and fashion trends in Malawi."
+        },
+        {
+            "name": "Healthy Living Clinic",
+            "address": "303 Wellness Road, Lilongwe, Malawi",
+            "phone": "+265 777 654 987",
+            "website": "https://healthylivingclinic.mw",
+            "image": "clinic.png",
+            "membershipLevel": "Bronze",
+            "description": "Providing quality healthcare services and wellness programs."
+        },
+        {
+            "name": "Malawi Transport Co.",
+            "address": "404 Logistics Park, Lilongwe, Malawi",
+            "phone": "+265 999 789 123",
+            "website": "https://malawitransportco.mw",
+            "image": "transport.png",
+            "membershipLevel": "Gold",
+            "description": "Reliable transportation and logistics services across Malawi."
+        }
+    ]
+}
