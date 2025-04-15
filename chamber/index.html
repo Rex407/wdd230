@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lilongwe Chamber of Commerce | Home</title>
-    <meta name="description"
-        content="Discover the Lilongwe Chamber of Commerce and grow your business through networking and community engagement">
+    <meta name="description" content="Discover the Lilongwe Chamber of Commerce and grow your business through networking and community engagement">
     <meta name="author" content="Rex J Kapoloma">
 
     <!-- Favicon -->
-    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="images/favicon.png" type="image/png">
 
     <!-- Social Media Meta Tags -->
     <meta property="og:title" content="Lilongwe Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://lilongwechamber.org/images/preview-image.jpg">
+    <meta property="og:image" content="https://lilongwechamber.org/images/preview-image.webp">
     <meta property="og:url" content="https://lilongwechamber.org">
 
     <!-- CSS -->
@@ -23,30 +21,37 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <!-- Meet and Greet Banner -->
+    <div id="banner" class="banner hidden">
+        <p>Join us for the Chamber Meet and Greet on Wednesday at 7:00 p.m.!</p>
+        <button id="close-banner" aria-label="Close meet and greet banner">
+            <span class="close-icon">❌</span>
+            <span class="sr-only">Close</span>
+        </button>
+    </div>
+
     <header class="commerce-header">
         <div class="commerce-identity">
             <h1>Lilongwe</h1>
             <h2>Chamber of Commerce</h2>
         </div>
         <div class="social-newsletter">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook" width="20"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter" width="20"></a>
-            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn" width="20"></a>
-            <a href="#" class="newsletter-btn">Join Our Newsletter</a>
+            <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page"><img src="images/facebook-brands.svg" alt="Facebook icon" width="20" height="20" loading="lazy"></a>
+            <a href="https://x.com" target="_blank" aria-label="Visit our X profile"><img src="images/square-x-twitter-brands.svg" alt="X icon" width="20" height="20" loading="lazy"></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="Visit our LinkedIn page"><img src="images/linkedin-brands.svg" alt="LinkedIn icon" width="20" height="20" loading="lazy"></a>
+            <a href="join.html#newsletter" class="newsletter-btn">Join Our Newsletter</a>
         </div>
     </header>
 
     <nav class="top-nav">
-        <button class="hamburger" aria-label="Toggle Menu">
+        <button class="hamburger" aria-label="Toggle Navigation Menu">
             <span class="hamburger-icon">☰</span>
         </button>
         <ul class="nav-menu">
-            <li><a href="/index.html">Home</a></li>
+            <li><a href="index.html" aria-current="page">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
@@ -57,8 +62,7 @@
         <!-- Hero Section with Image and CTA -->
         <section class="hero-section">
             <div class="hero-content">
-                <img src="images/9-lilongwe-malawi-skyline-michael-tompsett2.webp" alt="Lilongwe Cityscape"
-                    class="hero-image" width="960" height="540" loading="eager">
+                <img src="images/9-lilongwe-malawi-skyline-michael-tompsett2.webp" alt="Lilongwe cityscape skyline" class="hero-image" width="960" height="540" loading="eager">
                 <div class="hero-overlay">
                     <h1>Welcome to Lilongwe Chamber of Commerce</h1>
                     <p>Grow your business and connect with our vibrant community.</p>
@@ -73,7 +77,7 @@
             <div class="event-card">
                 <h3>Networking Night - Local Entrepreneurs</h3>
                 <p>Meet fellow business owners this Wednesday at 5:30 p.m.</p>
-                <a href="#" class="event-link">Learn More</a>
+                <a href="events.html" class="event-link">Learn More</a>
             </div>
         </section>
 
@@ -82,37 +86,17 @@
             <h2>Weather in Lilongwe</h2>
             <div class="weather-card">
                 <h3>Today</h3>
-                <p class="weather-temp">26°C</p>
-                <p class="weather-desc">Sunny</p>
-                <p>Humidity: 65%</p>
-                <p>Wind: 10 km/h</p>
+                <p class="weather-temp"><span id="current-temp">Loading...</span>°C</p>
+                <p class="weather-desc"><span id="current-desc">Loading...</span></p>
+                <h4>3-Day Forecast</h4>
+                <div id="forecast" class="forecast-grid"></div>
             </div>
         </section>
 
         <!-- Company Spotlights Section -->
         <section class="spotlights-section">
             <h2>Member Spotlights</h2>
-            <div class="spotlight-card">
-                <h3>Sunrise Delivery</h3>
-                <p class="slogan">"On Time, Every Time"</p>
-                <p>support@sunrisedelivery.mw</p>
-                <p>+265-9911-2233</p>
-                <a href="#" class="spotlight-link">Visit Site</a>
-            </div>
-            <div class="spotlight-card">
-                <h3>Innovate Labs</h3>
-                <p class="slogan">Tech skills for tomorrow</p>
-                <p>info@innovatelabs.mw</p>
-                <p>+265-8877-6655</p>
-                <a href="#" class="spotlight-link">Visit Site</a>
-            </div>
-            <div class="spotlight-card">
-                <h3>Green Structures</h3>
-                <p class="slogan">Building a sustainable future</p>
-                <p>hello@greenstructures.mw</p>
-                <p>+265-7755-4433</p>
-                <a href="#" class="spotlight-link">Visit Site</a>
-            </div>
+            <div id="spotlight-container" class="spotlight-grid"></div>
         </section>
     </main>
 
@@ -124,33 +108,16 @@
                 <p>Lilongwe, MW 78910</p>
                 <p>Phone: <a href="tel:+2659990000">+265-999-0000</a></p>
                 <p>Email: <a href="mailto:membership@lilongwechamber.org">membership@lilongwechamber.org</a></p>
-                <p><a href="#" class="map-link">View Map</a></p>
+                <p><a href="https://maps.google.com/?q=City+Center+Plaza,Lilongwe,Malawi" target="_blank" class="map-link">View Map</a></p>
             </div>
             <div class="footer-text">
-                <p>©2025 Lilongwe Chamber of Commerce | <strong>Rex J Kapoloma</strong> | WDD 230 Project | Last
-                    Modification Date: <span id="last-update"></span></p>
+                <p>©2025 Lilongwe Chamber of Commerce | <strong>Rex J Kapoloma</strong> | WDD 230 Project | Last Modification: <span id="last-update"></span></p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Hamburger Menu Toggle
-        document.querySelector('.hamburger').addEventListener('click', () => {
-            document.querySelector('.nav-menu').classList.toggle('active');
-        });
-
-        // Last Modification Date
-        const lastModified = new Date(document.lastModified);
-        const options = {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit'
-        };
-        document.getElementById('last-update').textContent = lastModified.toLocaleString('en-US', options);
-    </script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
 </body>
-
 </html>
