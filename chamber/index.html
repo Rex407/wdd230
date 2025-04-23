@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lilongwe Chamber of Commerce | Home</title>
-    <meta name="description" content="Discover the Lilongwe Chamber of Commerce and grow your business through networking and community engagement">
+    <title>Lilongwe Chamber of Commerce</title>
+    <meta name="description" content="Lilongwe Chamber of Commerce supports local businesses through networking, events, and resources.">
     <meta name="author" content="Rex J Kapoloma">
 
     <!-- Favicon -->
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
-    <header>
+    <header role="banner">
         <div class="logo">
             <img src="images/members/logs/web logo.png" alt="Lilongwe Chamber of Commerce Logo">
             <div class="logo-text">
@@ -36,8 +36,8 @@
             </button>
             <div class="nav-container">
                 <div class="social-icons">
-                    <a href="https://facebook.com"><img src="images/facebook-brands.svg" alt="Facebook"></a>
-                    <a href="https://linkedin.com"><img src="images/linkedin-brands.svg" alt="LinkedIn"></a>
+                    <a href="https://facebook.com"><img src="images/facebook-brands.svg" alt="Facebook Icon"></a>
+                    <a href="https://linkedin.com"><img src="images/linkedin-brands.svg" alt="LinkedIn Icon"></a>
                 </div>
                 <nav aria-label="Main navigation">
                     <ul>
@@ -52,47 +52,46 @@
     </header>
     <main class="main-content">
         <div id="meet-greet-banner" style="display: none;">
-            <p>Join us for a Meet & Greet this Monday, Tuesday, or Wednesday!</p>
-            <button id="close-banner">Close</button>
+            <p>Join us for the Chamber Meet and Greet on Wednesday at 7:00 p.m.!</p>
+            <button id="close-banner" aria-label="Close banner">❌</button>
         </div>
-        <button class="cta-button">Join the Chamber</button>
-        <img class="hero-image" src="images/9-lilongwe-malawi-skyline-michael-tompsett2.webp" alt="Lilongwe City">
-        <div class="events-weather">
-            <section class="events">
-                <h2>Events</h2>
-                <p><strong>Ribbon Cutting ~ The Diam & nd Shack</strong><br>Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.</p>
-                <a href="#">more info...</a>
-            </section>
-            <section class="weather">
+        <img class="hero-image" src="images/9-lilongwe-malawi-skyline-michael-tompsett2.webp" alt="Lilongwe City Skyline">
+        <button class="cta-button">Discover Lilongwe</button>
+        <section class="events-weather">
+            <div class="weather">
                 <h2>Weather</h2>
-                <p>🌤️33°C<br><strong>Partly Cloudy</strong><br>Humidity: 35%<br>Wind Chill: N/A</p>
-            </section>
-        </div>
-        <section class="featured">
-            <div>
-                <img src="images/delivery-truck.png" alt="Transport Icon">
-                <p>Thankful Transport<br>"We get it there for you!"<br>hello@thankfultransport.com<br><a href="#">Website</a></p>
+                <div id="current-weather">
+                    <p><strong>Current Temperature:</strong> <span id="current-temp"></span>°C</p>
+                    <p><strong>Condition:</strong> <span id="weather-desc"></span></p>
+                </div>
+                <div id="forecast">
+                    <h3>3-Day Forecast</h3>
+                    <div id="forecast-days"></div>
+                </div>
             </div>
-            <div>
-                <img src="images/man-technologist.png" alt="Code Icon">
-                <p>Code Primera<br>After school coding!<br>contact@codeprimera.com<br><a href="#">Website</a></p>
+            <div class="events">
+                <h2>Events</h2>
+                <p><a href="#">Annual Business Expo</a> - October 15, 2025</p>
+                <p><a href="#">Networking Breakfast</a> - November 5, 2025</p>
             </div>
-            <div>
-                <img src="images/evergreen-tree.png" alt="Treefort Icon">
-                <p>Build A Treefort<br>Over 1000 Plans!<br>builda@treefort.com<br><a href="#">Website</a></p>
-            </div>
+        </section>
+        <section class="featured" id="spotlights">
+            <h2>Spotlight Members</h2>
+            <!-- Spotlights will be dynamically loaded here -->
         </section>
     </main>
     <footer>
         <div class="footer-content">
-            <div class="logo">
-                <img src="images/members/logs/web logo.png" alt="Lilongwe Chamber of Commerce Logo">
+            <div class="footer-logo-contact">
+                <div class="logo">
+                    <img src="images/members/logs/web logo.png" alt="Lilongwe Chamber of Commerce Logo">
+                </div>
+                <div class="contact-info">
+                    <p>Lilongwe Chamber of Commerce<br>123 Capital Road<br>Lilongwe, Malawi</p>
+                </div>
             </div>
             <div>
-                <p>Lilongwe Chamber of Commerce<br>123 Capital Road<br>Lilongwe, Malawi</p>
-            </div>
-            <div>
-                <p>info@lilongwecc.org<br>+(265) 1234 5678<br><a href="#">Location Map</a></p>
+                <p>info@lilongwecc.org<br>+(265) 1234 5678<br><a href="https://www.google.com/maps/place/Lilongwe,+Malawi">Location Map</a></p>
             </div>
         </div>
         <div class="footer-bottom">

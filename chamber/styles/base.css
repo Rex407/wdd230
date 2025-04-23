@@ -189,6 +189,24 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
+.weather #forecast h3 {
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.weather #forecast-days {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.weather .forecast-day {
+  background-color: #f0f8ff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 .events a, .weather p {
   color: #005566;
 }
@@ -199,6 +217,12 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.featured h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
 }
 
 .featured div {
