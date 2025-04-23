@@ -191,6 +191,23 @@
         font-size: 28px;
     }
 
+    /* Directory Page Content */
+    .directory-content {
+        padding: 30px;
+    }
+
+    .directory-content h2 {
+        font-size: 28px;
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for desktop */
+    }
+
+    .member-card, .member-list-item {
+        padding: 20px;
+    }
+
     /* Footer */
     .footer-content {
         flex-direction: row;

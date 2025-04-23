@@ -449,6 +449,87 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Directory Page Content */
+.directory-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.directory-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.view-toggle {
+    margin-bottom: 20px;
+}
+
+.view-button {
+    background-color: #005566;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+}
+
+.view-button:hover {
+    background-color: #003d4c;
+}
+
+.view-button.active {
+    background-color: #003d4c;
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 20px;
+}
+
+.members-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.member-card, .member-list-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.member-card img, .member-list-item img {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.member-card h3, .member-list-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.member-card p, .member-list-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.member-card a, .member-list-item a {
+    color: #005566;
+    text-decoration: none;
+}
+
+.member-card a:hover, .member-list-item a:hover {
+    text-decoration: underline;
+}
+
 /* Footer */
 footer {
   background-color: #161491;

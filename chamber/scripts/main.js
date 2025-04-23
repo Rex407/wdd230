@@ -7,6 +7,9 @@ const banner = document.getElementById('meet-greet-banner');
 const closeBannerBtn = document.getElementById('close-banner');
 const visitMessageElement = document.getElementById('visit-message');
 const timestampField = document.getElementById('timestamp');
+const membersContainer = document.getElementById('members-container');
+const gridViewButton = document.getElementById('grid-view');
+const listViewButton = document.getElementById('list-view');
 
 /**
  * Toggles mobile navigation menu
@@ -118,6 +121,74 @@ function setTimestamp() {
 }
 
 /**
+ * Fetches and displays members from the JSON file
+ */
+async function fetchMembers() {
+    if (!membersContainer) return; // Only run if the element exists (i.e., on directory.html)
+
+    try {
+        const response = await fetch('data/members.json');
+        const members = await response.json();
+        displayMembers(members, 'grid'); // Default to grid view
+    } catch (error) {
+        console.error('Error fetching members:', error);
+        membersContainer.innerHTML = '<p>Error loading members. Please try again later.</p>';
+    }
+}
+
+/**
+ * Displays members in the specified view (grid or list)
+ */
+function displayMembers(members, view) {
+    membersContainer.innerHTML = ''; // Clear existing content
+    membersContainer.className = view === 'grid' ? 'members-grid' : 'members-list';
+
+    members.forEach(member => {
+        const memberElement = document.createElement('div');
+        memberElement.className = view === 'grid' ? 'member-card' : 'member-list-item';
+
+        memberElement.innerHTML = `
+            <img src="images/${member.image}" alt="${member.name} Icon">
+            <h3>${member.name}</h3>
+            <p><strong>Category:</strong> ${member.category}</p>
+            <p><strong>Address:</strong> ${member.address}</p>
+            <p><strong>Phone:</strong> ${member.phone}</p>
+            <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+            <p><strong>Membership Level:</strong> ${member.membershipLevel}</p>
+        `;
+
+        membersContainer.appendChild(memberElement);
+    });
+}
+
+/**
+ * Sets up the view toggle functionality
+ */
+function setupViewToggle() {
+    if (!gridViewButton || !listViewButton) return; // Only run if the elements exist (i.e., on directory.html)
+
+    let currentView = 'grid'; // Default view
+
+    gridViewButton.addEventListener('click', async () => {
+        currentView = 'grid';
+        gridViewButton.classList.add('active');
+        listViewButton.classList.remove('active');
+        const response = await fetch('data/members.json');
+        const members = await response.json();
+        displayMembers(members, currentView);
+    });
+
+    listViewButton.addEventListener('click', async () => {
+        currentView = 'list';
+        listViewButton.classList.add('active');
+        gridViewButton.classList.remove('active');
+        const response = await fetch('data/members.json');
+        const members = await response.json();
+        displayMembers(members, currentView);
+    });
+}
+
+/**
  * Initializes all event listeners
  */
 function initEventListeners() {
@@ -140,6 +211,8 @@ document.addEventListener('DOMContentLoaded', () => {
     displayLastModified();
     displayVisitMessage();
     setTimestamp();
+    fetchMembers();
+    setupViewToggle();
     initEventListeners();
     
     // Set initial aria attributes for accessibility
