@@ -8,7 +8,7 @@
     <meta name="author" content="Rex J Kapoloma">
 
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="icon" href="images/members/logs/web logo.png" type="image/png">
 
     <!-- Social Media Meta Tags -->
     <meta property="og:title" content="Lilongwe Chamber of Commerce">
@@ -17,107 +17,88 @@
     <meta property="og:url" content="https://lilongwechamber.org">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Meet and Greet Banner -->
-    <div id="banner" class="banner hidden">
-        <p>Join us for the Chamber Meet and Greet on Wednesday at 7:00 p.m.!</p>
-        <button id="close-banner" aria-label="Close meet and greet banner">
-            <span class="close-icon">❌</span>
-            <span class="sr-only">Close</span>
-        </button>
-    </div>
-
-    <header class="commerce-header">
-        <div class="commerce-identity">
-            <h1>Lilongwe</h1>
-            <h2>Chamber of Commerce</h2>
+    <header>
+        <div class="logo">
+            <img src="images/members/logs/web logo.png" alt="Lilongwe Chamber of Commerce Logo">
+            <div class="logo-text">
+                <span class="logo-title">Lilongwe</span>
+                <span class="logo-subtitle">Chamber of Commerce</span>
+            </div>
         </div>
-        <div class="social-newsletter">
-            <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page"><img src="images/facebook-brands.svg" alt="Facebook icon" width="20" height="20" loading="lazy"></a>
-            <a href="https://x.com" target="_blank" aria-label="Visit our X profile"><img src="images/square-x-twitter-brands.svg" alt="X icon" width="20" height="20" loading="lazy"></a>
-            <a href="https://linkedin.com" target="_blank" aria-label="Visit our LinkedIn page"><img src="images/linkedin-brands.svg" alt="LinkedIn icon" width="20" height="20" loading="lazy"></a>
-            <a href="join.html#newsletter" class="newsletter-btn">Join Our Newsletter</a>
+        <div class="header-right">
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger-icon">☰</span>
+            </button>
+            <div class="nav-container">
+                <div class="social-icons">
+                    <a href="https://facebook.com"><img src="images/facebook-brands.svg" alt="Facebook"></a>
+                    <a href="https://linkedin.com"><img src="images/linkedin-brands.svg" alt="LinkedIn"></a>
+                </div>
+                <nav aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-
-    <nav class="top-nav">
-        <button class="hamburger" aria-label="Toggle Navigation Menu">
-            <span class="hamburger-icon">☰</span>
-        </button>
-        <ul class="nav-menu">
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <!-- Hero Section with Image and CTA -->
-        <section class="hero-section">
-            <div class="hero-content">
-                <img src="images/9-lilongwe-malawi-skyline-michael-tompsett2.webp" alt="Lilongwe cityscape skyline" class="hero-image" width="960" height="540" loading="eager">
-                <div class="hero-overlay">
-                    <h1>Welcome to Lilongwe Chamber of Commerce</h1>
-                    <p>Grow your business and connect with our vibrant community.</p>
-                    <a href="join.html" class="cta-btn">Join Now</a>
-                </div>
+    <main class="main-content">
+        <div id="meet-greet-banner" style="display: none;">
+            <p>Join us for a Meet & Greet this Monday, Tuesday, or Wednesday!</p>
+            <button id="close-banner">Close</button>
+        </div>
+        <button class="cta-button">Join the Chamber</button>
+        <img class="hero-image" src="images/9-lilongwe-malawi-skyline-michael-tompsett2.webp" alt="Lilongwe City">
+        <div class="events-weather">
+            <section class="events">
+                <h2>Events</h2>
+                <p><strong>Ribbon Cutting ~ The Diam & nd Shack</strong><br>Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.</p>
+                <a href="#">more info...</a>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <p>🌤️33°C<br><strong>Partly Cloudy</strong><br>Humidity: 35%<br>Wind Chill: N/A</p>
+            </section>
+        </div>
+        <section class="featured">
+            <div>
+                <img src="images/delivery-truck.png" alt="Transport Icon">
+                <p>Thankful Transport<br>"We get it there for you!"<br>hello@thankfultransport.com<br><a href="#">Website</a></p>
             </div>
-        </section>
-
-        <!-- Current Events Section -->
-        <section class="events-section">
-            <h2>Current Events</h2>
-            <div class="event-card">
-                <h3>Networking Night - Local Entrepreneurs</h3>
-                <p>Meet fellow business owners this Wednesday at 5:30 p.m.</p>
-                <a href="events.html" class="event-link">Learn More</a>
+            <div>
+                <img src="images/man-technologist.png" alt="Code Icon">
+                <p>Code Primera<br>After school coding!<br>contact@codeprimera.com<br><a href="#">Website</a></p>
             </div>
-        </section>
-
-        <!-- Weather Card Section -->
-        <section class="weather-section">
-            <h2>Weather in Lilongwe</h2>
-            <div class="weather-card">
-                <h3>Today</h3>
-                <p class="weather-temp"><span id="current-temp">Loading...</span>°C</p>
-                <p class="weather-desc"><span id="current-desc">Loading...</span></p>
-                <h4>3-Day Forecast</h4>
-                <div id="forecast" class="forecast-grid"></div>
+            <div>
+                <img src="images/evergreen-tree.png" alt="Treefort Icon">
+                <p>Build A Treefort<br>Over 1000 Plans!<br>builda@treefort.com<br><a href="#">Website</a></p>
             </div>
-        </section>
-
-        <!-- Company Spotlights Section -->
-        <section class="spotlights-section">
-            <h2>Member Spotlights</h2>
-            <div id="spotlight-container" class="spotlight-grid"></div>
         </section>
     </main>
-
-    <footer class="commerce-footer">
+    <footer>
         <div class="footer-content">
-            <div class="footer-contact">
-                <h3>Lilongwe Chamber of Commerce</h3>
-                <p>City Center Plaza</p>
-                <p>Lilongwe, MW 78910</p>
-                <p>Phone: <a href="tel:+2659990000">+265-999-0000</a></p>
-                <p>Email: <a href="mailto:membership@lilongwechamber.org">membership@lilongwechamber.org</a></p>
-                <p><a href="https://maps.google.com/?q=City+Center+Plaza,Lilongwe,Malawi" target="_blank" class="map-link">View Map</a></p>
+            <div class="logo">
+                <img src="images/members/logs/web logo.png" alt="Lilongwe Chamber of Commerce Logo">
             </div>
-            <div class="footer-text">
-                <p>©2025 Lilongwe Chamber of Commerce | <strong>Rex J Kapoloma</strong> | WDD 230 Project | Last Modification: <span id="last-update"></span></p>
+            <div>
+                <p>Lilongwe Chamber of Commerce<br>123 Capital Road<br>Lilongwe, Malawi</p>
+            </div>
+            <div>
+                <p>info@lilongwecc.org<br>+(265) 1234 5678<br><a href="#">Location Map</a></p>
             </div>
         </div>
+        <div class="footer-bottom">
+            <p>© 2022 Lilongwe Chamber | Rex J Kapoloma | WDD 230 Project | Last Modification: <span id="last-modified"></span></p>
+        </div>
     </footer>
-
-    <script src="scripts/main.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlights.js" defer></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

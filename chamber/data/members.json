@@ -1,74 +1,208 @@
 {
+    "lastUpdated": "2023-11-15T08:30:00Z",
     "members": [
         {
+            "id": "LTS001",
             "name": "Lilongwe Tech Solutions",
+            "shortName": "LTS",
             "membership": "gold",
+            "membershipSince": "2020-05-15",
+            "category": "Technology",
             "tagline": "Innovate Today, Lead Tomorrow",
-            "email": "info@lilongwetechsolutions.mw",
-            "phone": "+265-999-123-456",
+            "description": "Providing cutting-edge IT solutions and digital transformation services for businesses across Malawi.",
+            "contact": {
+                "email": "info@lilongwetechsolutions.mw",
+                "phone": "+265-999-123-456",
+                "emergencyPhone": "+265-999-123-457",
+                "address": {
+                    "street": "123 Tech Road",
+                    "city": "Lilongwe",
+                    "country": "Malawi",
+                    "postalCode": "265001"
+                }
+            },
             "website": "https://lilongwetechsolutions.mw",
-            "image": "images/tech_solutions.webp",
-            "address": "123 Tech Road, Lilongwe, Malawi"
+            "socialMedia": {
+                "facebook": "https://facebook.com/lilongwetechsolutions",
+                "linkedin": "https://linkedin.com/company/lilongwetechsolutions"
+            },
+            "image": "images/members/tech_solutions.webp",
+            "logo": "images/members/logos/tech_solutions_logo.webp",
+            "employees": 45,
+            "yearFounded": 2018,
+            "services": ["Software Development", "IT Consulting", "Cloud Solutions"],
+            "businessHours": {
+                "weekdays": "08:00-17:00",
+                "saturday": "09:00-13:00",
+                "sunday": "Closed"
+            }
         },
         {
+            "id": "MAF002",
             "name": "Malawi Agro Farms",
+            "shortName": "MAF",
             "membership": "silver",
+            "membershipSince": "2021-02-10",
+            "category": "Agriculture",
             "tagline": "Growing a Sustainable Future",
-            "email": "contact@malawiagrofarms.mw",
-            "phone": "+265-888-654-321",
+            "description": "Leading producer of organic crops and sustainable farming solutions in central Malawi.",
+            "contact": {
+                "email": "contact@malawiagrofarms.mw",
+                "phone": "+265-888-654-321",
+                "address": {
+                    "street": "456 Farm Lane",
+                    "city": "Lilongwe",
+                    "country": "Malawi",
+                    "postalCode": "265002"
+                }
+            },
             "website": "https://malawiagrofarms.mw",
-            "image": "images/agro_farms.webp",
-            "address": "456 Farm Lane, Lilongwe, Malawi"
+            "socialMedia": {
+                "facebook": "https://facebook.com/malawiagrofarms"
+            },
+            "image": "images/members/agro_farms.webp",
+            "employees": 120,
+            "yearFounded": 2015,
+            "services": ["Organic Produce", "Farm Consulting"],
+            "businessHours": {
+                "weekdays": "07:00-16:00",
+                "saturday": "08:00-12:00",
+                "sunday": "Closed"
+            }
         },
         {
+            "id": "SB003",
             "name": "Sunrise Bakery",
+            "shortName": "Sunrise",
             "membership": "bronze",
+            "membershipSince": "2022-08-22",
+            "category": "Food & Beverage",
             "tagline": "Freshly Baked Daily",
-            "email": "orders@sunrisebakery.mw",
-            "phone": "+265-777-987-654",
+            "description": "Artisan bakery specializing in traditional Malawian and European breads and pastries.",
+            "contact": {
+                "email": "orders@sunrisebakery.mw",
+                "phone": "+265-777-987-654",
+                "address": {
+                    "street": "789 Bread Street",
+                    "city": "Lilongwe",
+                    "country": "Malawi",
+                    "postalCode": "265003"
+                }
+            },
             "website": "https://sunrisebakery.mw",
-            "image": "images/bakery.webp",
-            "address": "789 Bread Street, Lilongwe, Malawi"
+            "image": "images/members/bakery.webp",
+            "employees": 18,
+            "yearFounded": 2020,
+            "businessHours": {
+                "weekdays": "06:00-18:00",
+                "saturday": "06:00-16:00",
+                "sunday": "08:00-14:00"
+            }
         },
         {
+            "id": "EEM004",
             "name": "Eco Energy Malawi",
+            "shortName": "EcoEnergy",
             "membership": "gold",
+            "membershipSince": "2019-11-05",
+            "category": "Energy",
             "tagline": "Powering a Greener Malawi",
-            "email": "support@ecoenergymalawi.mw",
-            "phone": "+265-999-456-789",
+            "description": "Renewable energy solutions provider specializing in solar and wind power installations.",
+            "contact": {
+                "email": "support@ecoenergymalawi.mw",
+                "phone": "+265-999-456-789",
+                "emergencyPhone": "+265-999-456-788",
+                "address": {
+                    "street": "101 Solar Avenue",
+                    "city": "Lilongwe",
+                    "country": "Malawi",
+                    "postalCode": "265004"
+                }
+            },
             "website": "https://ecoenergymalawi.mw",
-            "image": "images/eco_energy.webp",
-            "address": "101 Solar Avenue, Lilongwe, Malawi"
+            "socialMedia": {
+                "twitter": "https://twitter.com/ecoenergymw"
+            },
+            "image": "images/members/eco_energy.webp",
+            "employees": 32,
+            "yearFounded": 2017,
+            "services": ["Solar Installations", "Energy Consulting"]
         },
         {
+            "id": "LFH005",
             "name": "Lilongwe Fashion Hub",
+            "shortName": "FashionHub",
             "membership": "silver",
+            "membershipSince": "2023-01-15",
+            "category": "Retail",
             "tagline": "Style That Defines You",
-            "email": "info@lilongwefashionhub.mw",
-            "phone": "+265-888-321-654",
+            "description": "Premier fashion retailer featuring local designers and international brands.",
+            "contact": {
+                "email": "info@lilongwefashionhub.mw",
+                "phone": "+265-888-321-654",
+                "address": {
+                    "street": "202 Style Boulevard",
+                    "city": "Lilongwe",
+                    "country": "Malawi",
+                    "postalCode": "265005"
+                }
+            },
             "website": "https://lilongwefashionhub.mw",
-            "image": "images/fashion_hub.webp",
-            "address": "202 Style Boulevard, Lilongwe, Malawi"
+            "image": "images/members/fashion_hub.webp",
+            "employees": 25,
+            "yearFounded": 2021
         },
         {
+            "id": "HLC006",
             "name": "Healthy Living Clinic",
+            "shortName": "HealthyLiving",
             "membership": "bronze",
+            "membershipSince": "2021-07-30",
+            "category": "Healthcare",
             "tagline": "Your Wellness, Our Priority",
-            "email": "care@healthylivingclinic.mw",
-            "phone": "+265-777-654-987",
+            "description": "Full-service medical clinic providing comprehensive healthcare services.",
+            "contact": {
+                "email": "care@healthylivingclinic.mw",
+                "phone": "+265-777-654-987",
+                "address": {
+                    "street": "303 Wellness Road",
+                    "city": "Lilongwe",
+                    "country": "Malawi",
+                    "postalCode": "265006"
+                }
+            },
             "website": "https://healthylivingclinic.mw",
-            "image": "images/clinic.webp",
-            "address": "303 Wellness Road, Lilongwe, Malawi"
+            "image": "images/members/clinic.webp",
+            "employees": 38
         },
         {
+            "id": "MTC007",
             "name": "Malawi Transport Co.",
+            "shortName": "MTC",
             "membership": "gold",
+            "membershipSince": "2018-04-12",
+            "category": "Transportation",
             "tagline": "Delivering Across Malawi",
-            "email": "logistics@malawitransportco.mw",
-            "phone": "+265-999-789-123",
+            "description": "Nationwide logistics and transportation services with reliable delivery networks.",
+            "contact": {
+                "email": "logistics@malawitransportco.mw",
+                "phone": "+265-999-789-123",
+                "emergencyPhone": "+265-999-789-124",
+                "address": {
+                    "street": "404 Logistics Park",
+                    "city": "Lilongwe",
+                    "country": "Malawi",
+                    "postalCode": "265007"
+                }
+            },
             "website": "https://malawitransportco.mw",
-            "image": "images/transport.webp",
-            "address": "404 Logistics Park, Lilongwe, Malawi"
+            "socialMedia": {
+                "facebook": "https://facebook.com/malawitransportco"
+            },
+            "image": "images/members/transport.webp",
+            "employees": 85,
+            "yearFounded": 2016,
+            "services": ["Freight Shipping", "Passenger Transport"]
         }
     ]
 }

@@ -4,180 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lilongwe Chamber of Commerce | Discover</title>
-    <meta name="description"
-        content="Discover Lilongwe with the Chamber of Commerce - explore local attractions, demographics, and community information to learn more about our vibrant city.">
+    <meta name="description" content="Discover Lilongwe, Malawi - explore demographics, statistics, attractions, and local imagery to learn more about our vibrant community.">
     <meta name="author" content="Rex J Kapoloma">
 
     <!-- Favicon -->
-    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="images/members/logs/web log.png" type="image/png">
 
     <!-- Social Media Meta Tags -->
     <meta property="og:title" content="Lilongwe Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://lilongwechamber.org/images/preview-image.jpg">
+    <meta property="og:image" content="https://lilongwechamber.org/images/preview-image.webp">
     <meta property="og:url" content="https://lilongwechamber.org">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
 </head>
 <body>
-    <header class="commerce-header">
-        <div class="commerce-identity">
-            <h1>Lilongwe</h1>
-            <h2>Chamber of Commerce</h2>
+    <header>
+        <div class="logo">
+            <img src="images/members/logs/web logo.png" alt="Lilongwe Chamber of Commerce Logo">
+            <div class="logo-text">
+                <span class="logo-title">Lilongwe</span>
+                <span class="logo-subtitle">Chamber of Commerce</span>
+            </div>
         </div>
-        <div class="social-newsletter">
-            <a href="#"><img src="images/facebook-icon.webp" alt="Facebook" width="20" height="20" loading="eager"></a>
-            <a href="#"><img src="images/twitter-icon.webp" alt="Twitter" width="20" height="20" loading="eager"></a>
-            <a href="#"><img src="images/linkedin-icon.webp" alt="LinkedIn" width="20" height="20" loading="eager"></a>
-            <a href="#" class="newsletter-btn">Join Our Newsletter</a>
+        <div class="header-right">
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger-icon">☰</span>
+            </button>
+            <div class="nav-container">
+                <div class="social-icons">
+                    <a href="https://facebook.com"><img src="images/facebook-brands.svg" alt="Facebook"></a>
+                    <a href="https://linkedin.com"><img src="images/linkedin-brands.svg" alt="LinkedIn"></a>
+                </div>
+                <nav aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-
-    <nav class="top-nav">
-        <button class="hamburger" aria-label="Toggle Menu">
-            <span class="hamburger-icon">☰</span>
-        </button>
-        <ul class="nav-menu">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="discover.html" class="active">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <!-- Sidebar Layout -->
-        <div class="discover-container">
-            <aside class="sidebar">
-                <h2>Discover Lilongwe</h2>
-                <div class="visit-message">
-                    <p id="visit-message">Welcome! Let us know if you have any questions.</p>
-                </div>
-                <div class="demographics">
-                    <h3>Demographics</h3>
-                    <p>Population: ~1.2 million (2025 est.)</p>
-                    <p>Median Age: 22 years</p>
-                    <p>Primary Language: Chichewa</p>
-                    <p>Economic Growth: 4.5% annually</p>
-                </div>
-                <div class="attractions">
-                    <h3>Top Attractions</h3>
-                    <ul>
-                        <li>Lilongwe Wildlife Centre - A sanctuary for rescued animals</li>
-                        <li>Kamuzu Mausoleum - Historical monument</li>
-                        <li>Old Town Market - Vibrant local market</li>
-                    </ul>
-                </div>
-                <div class="events">
-                    <h3>Upcoming Events</h3>
-                    <ul>
-                        <li>Annual Trade Fair - May 15, 2025</li>
-                        <li>Cultural Festival - June 20, 2025</li>
-                    </ul>
-                </div>
-            </aside>
-            <section class="gallery">
-                <h2>Explore Lilongwe Through Imagery</h2>
-                <div class="photo-gallery">
-                    <figure>
-                        <img src="images/lilongwe wildlife.webp" alt="Lilongwe Wildlife Centre" width="400" height="300" loading="lazy">
-                        <figcaption>Lilongwe Wildlife Centre - A sanctuary for rescued animals.</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/Kamuzu Mausoleum.webp" alt="Kamuzu Mausoleum" width="400" height="300" loading="lazy">
-                        <figcaption>Kamuzu Mausoleum - A tribute to Malawi's first president.</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/Old Town Market.webp" alt="Old Town Market" width="400" height="300" loading="lazy">
-                        <figcaption>Old Town Market - Vibrant local market in Lilongwe.</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/Lilongwe River2.webp" alt="Lilongwe River" width="400" height="300" loading="lazy">
-                        <figcaption>Lilongwe River - A scenic spot for relaxation.</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/Parliament Building.webp" alt="Parliament Building" width="400" height="300" loading="lazy">
-                        <figcaption>Parliament Building - Iconic government architecture.</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/Lilongwe Sunset.webp" alt="Lilongwe Sunset" width="400" height="300" loading="lazy">
-                        <figcaption>Lilongwe Sunset - A beautiful evening view.</figcaption>
-                    </figure>
-                </div>
+    <main class="discover-content">
+        <aside class="sidebar">
+            <h2>Discover Lilongwe</h2>
+            <div class="visit-message">
+                <p id="visit-message"></p>
+            </div>
+            <section class="demographics">
+                <h3>Demographics</h3>
+                <p><strong>Population:</strong> ~1.2 million (2025 estimate)</p>
+                <p><strong>Median Age:</strong> 20 years</p>
+                <p><strong>Urban Growth Rate:</strong> 4.3% annually</p>
+                <p><strong>Languages:</strong> English (official), Chichewa (widely spoken)</p>
             </section>
-        </div>
+            <section class="statistics">
+                <h3>Key Statistics</h3>
+                <p><strong>Economic Hub:</strong> Lilongwe contributes ~20% to Malawi's GDP</p>
+                <p><strong>Businesses:</strong> Over 5,000 registered businesses</p>
+                <p><strong>Tourism:</strong> ~150,000 visitors annually</p>
+            </section>
+            <section class="attractions">
+                <h3>Attractions</h3>
+                <p><strong>Lilongwe Wildlife Centre:</strong> A sanctuary for rescued animals.</p>
+                <p><strong>Old Town Market:</strong> Vibrant market with local crafts.</p>
+                <p><strong>Kamuzu Mausoleum:</strong> Historical landmark honoring Malawi's first president.</p>
+            </section>
+        </aside>
+        <section class="gallery">
+            <h2>Explore Lilongwe in Pictures</h2>
+            <div class="gallery-grid">
+                <figure>
+                    <img loading="lazy" src="images/lilongwe wildlife.webp" alt="Lilongwe Wildlife Centre">
+                    <figcaption>Lilongwe Wildlife Centre - A sanctuary for rescued animals.</figcaption>
+                </figure>
+                <figure>
+                    <img loading="lazy" src="images/Old Town Market.webp" alt="Old Town Market">
+                    <figcaption>Old Town Market - Vibrant stalls with local crafts and produce.</figcaption>
+                </figure>
+                <figure>
+                    <img loading="lazy" src="images/Kamuzu Mausoleum.webp" alt="Kamuzu Mausoleum">
+                    <figcaption>Kamuzu Mausoleum - Honoring Malawi's first president.</figcaption>
+                </figure>
+                <figure>
+                    <img loading="lazy" src="images/Lilongwe Skyline.webp" alt="Lilongwe Skyline">
+                    <figcaption>Lilongwe Skyline - A growing urban center.</figcaption>
+                </figure>
+                <figure>
+                    <img loading="lazy" src="images/Bingu National Stadium.webp" alt="Bingu National Stadium">
+                    <figcaption>Bingu National Stadium - Home to major events and sports.</figcaption>
+                </figure>
+                <figure>
+                    <img loading="lazy" src="images/Nature Sanctuary.webp" alt="Nature Sanctuary">
+                    <figcaption>Nature Sanctuary - A peaceful retreat in the city.</figcaption>
+                </figure>
+            </div>
+        </section>
     </main>
-
-    <footer class="commerce-footer">
+    <footer>
         <div class="footer-content">
-            <div class="footer-contact">
-                <h3>Lilongwe Chamber of Commerce</h3>
-                <p>City Center Plaza</p>
-                <p>Lilongwe, MW 78910</p>
-                <p>Phone: <a href="tel:+2659990000">+265-999-0000</a></p>
-                <p>Email: <a href="mailto:membership@lilongwechamber.org">membership@lilongwechamber.org</a></p>
-                <p><a href="#" class="map-link">View Map</a></p>
+            <div class="footer-logo-contact">
+                <div class="logo">
+                    <img src="images/members/logs/web logo.png" alt="Lilongwe Chamber of Commerce Logo">
+                </div>
+                <div class="contact-info">
+                    <p>Lilongwe Chamber of Commerce<br>123 Capital Road<br>Lilongwe, Malawi</p>
+                </div>
             </div>
-            <div class="footer-text">
-                <p>©2025 Lilongwe Chamber of Commerce | <strong>Rex J Kapoloma</strong> | WDD 230 Project | Last
-                    Modification Date: <span id="last-update"></span></p>
+            <div>
+                <p>info@lilongwecc.org<br>+(265) 1234 5678<br><a href="#">Location Map</a></p>
             </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2022 Lilongwe Chamber | Rex J Kapoloma | WDD 230 Project | Last Modification: <span id="last-modified"></span></p>
         </div>
     </footer>
-
-    <script>
-        // Hamburger Menu Toggle
-        document.querySelector('.hamburger').addEventListener('click', () => {
-            document.querySelector('.nav-menu').classList.toggle('active');
-        });
-
-        // Last Modification Date
-        const lastModified = new Date(document.lastModified);
-        const options = {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit'
-        };
-        document.getElementById('last-update').textContent = lastModified.toLocaleString('en-US', options);
-
-        // Page Visit Tracking with localStorage
-        function updateVisitMessage() {
-            const visitMessageElement = document.getElementById('visit-message');
-            const lastVisit = localStorage.getItem('lastVisitDiscover');
-            const currentVisit = Date.now();
-
-            if (!lastVisit) {
-                // First visit
-                visitMessageElement.textContent = "Welcome! Let us know if you have any questions.";
-            } else {
-                const timeDifference = currentVisit - parseInt(lastVisit);
-                const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-
-                if (daysDifference < 1) {
-                    // Less than a day
-                    visitMessageElement.textContent = "Back so soon! Awesome!";
-                } else {
-                    // More than a day
-                    const dayText = daysDifference === 1 ? "day" : "days";
-                    visitMessageElement.textContent = `You last visited ${daysDifference} ${dayText} ago.`;
-                }
-            }
-
-            // Store the current visit date
-            localStorage.setItem('lastVisitDiscover', currentVisit);
-        }
-
-        // Run the visit message update on page load
-        updateVisitMessage();
-    </script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

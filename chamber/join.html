@@ -4,173 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lilongwe Chamber of Commerce | Join</title>
-    <meta name="description" content="Join the Lilongwe Chamber of Commerce to grow your business and connect with our community">
+    <meta name="description" content="Join the Lilongwe Chamber of Commerce and grow your business through networking, events, and exclusive benefits.">
     <meta name="author" content="Rex J Kapoloma">
-    
+
     <!-- Favicon -->
-    <link rel="icon" href="favicon.png" type="image/png">
-    
+    <link rel="icon" href="images/members/logs/web log.png" type="image/png">
+
     <!-- Social Media Meta Tags -->
     <meta property="og:title" content="Lilongwe Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://lilongwechamber.org/images/preview-image.jpg">
+    <meta property="og:image" content="https://lilongwechamber.org/images/preview-image.webp">
     <meta property="og:url" content="https://lilongwechamber.org">
-    
+
     <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
-    <header class="commerce-header">
-        <div class="commerce-identity">
-            <h1>Lilongwe</h1>
-            <h2>Chamber of Commerce</h2>
+    <header>
+        <div class="logo">
+            <img src="images/members/logs/web logo.png" alt="Lilongwe Chamber of Commerce Logo">
+            <div class="logo-text">
+                <span class="logo-title">Lilongwe</span>
+                <span class="logo-subtitle">Chamber of Commerce</span>
+            </div>
         </div>
-        <div class="social-newsletter">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook" width="20"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter" width="20"></a>
-            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn" width="20"></a>
-            <a href="#" class="newsletter-btn">Join Our Newsletter</a>
+        <div class="header-right">
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger-icon">☰</span>
+            </button>
+            <div class="nav-container">
+                <div class="social-icons">
+                    <a href="https://facebook.com"><img src="images/facebook-brands.svg" alt="Facebook"></a>
+                    <a href="https://linkedin.com"><img src="images/linkedin-brands.svg" alt="LinkedIn"></a>
+                </div>
+                <nav aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-
-    <nav class="top-nav">
-        <button class="hamburger" aria-label="Toggle Menu">
-            <span class="hamburger-icon">☰</span>
-        </button>
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="/chamber/join.html">Join</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section class="join-section">
-            <h1>Join the Lilongwe Chamber of Commerce</h1>
-            <div class="join-content">
-                <form action="thankyou.html" method="get" class="join-form">
-                    <label for="first-name">
-                        First Name:
-                        <input type="text" id="first-name" name="first-name" required>
-                    </label>
-                    <label for="last-name">
-                        Last Name:
-                        <input type="text" id="last-name" name="last-name" required>
-                    </label>
-                    <label for="title">
-                        Title/Position:
-                        <input type="text" id="title" name="title" pattern="[A-Za-z\s-]{7,}" title="Only letters, hyphens, and spaces allowed, minimum 7 characters">
-                    </label>
-                    <label for="email">
-                        Email Address:
-                        <input type="email" id="email" name="email" required placeholder="example@domain.com">
-                    </label>
-                    <label for="phone">
-                        Mobile Phone Number:
-                        <input type="tel" id="phone" name="phone" required>
-                    </label>
-                    <label for="business-name">
-                        Business/Organization Name:
-                        <input type="text" id="business-name" name="business-name" required>
-                    </label>
-                    <label for="membership-level">
-                        Membership Level:
-                        <select id="membership-level" name="membership-level" required>
-                            <option value="" disabled selected>Select a membership level</option>
-                            <option value="np">NP Membership (Non-Profit, Free)</option>
-                            <option value="bronze">Bronze Membership</option>
-                            <option value="silver">Silver Membership</option>
-                            <option value="gold">Gold Membership</option>
-                        </select>
-                    </label>
-                    <label for="business-description">
-                        Business/Organization Description:
-                        <textarea id="business-description" name="business-description" rows="4"></textarea>
-                    </label>
-                    <input type="hidden" id="timestamp" name="timestamp" value="">
-                    <input type="submit" value="Submit Application">
-                </form>
-                <div class="membership-benefits">
-                    <h2>Membership Benefits</h2>
-                    <div class="benefit-card">
-                        <h3>NP Membership (Non-Profit)</h3>
-                        <p>Cost: Free</p>
-                        <ul>
-                            <li>Access to community events</li>
-                            <li>Basic networking opportunities</li>
-                        </ul>
-                    </div>
-                    <div class="benefit-card">
-                        <h3>Bronze Membership</h3>
-                        <p>Cost: $100/year</p>
-                        <ul>
-                            <li>All NP benefits</li>
-                            <li>Discounted event tickets</li>
-                            <li>Listing in the business directory</li>
-                        </ul>
-                    </div>
-                    <div class="benefit-card">
-                        <h3>Silver Membership</h3>
-                        <p>Cost: $250/year</p>
-                        <ul>
-                            <li>All Bronze benefits</li>
-                            <li>Access to exclusive training sessions</li>
-                            <li>Featured listing in the directory</li>
-                        </ul>
-                    </div>
-                    <div class="benefit-card">
-                        <h3>Gold Membership</h3>
-                        <p>Cost: $500/year</p>
-                        <ul>
-                            <li>All Silver benefits</li>
-                            <li>Priority spotlight on the homepage</li>
-                            <li>Free entry to premium events</li>
-                            <li>Personalized business consultation</li>
-                        </ul>
-                    </div>
+    <main class="join-content">
+        <section class="join-form">
+            <h2>Join the Lilongwe Chamber of Commerce</h2>
+            <form method="get" action="thankyou.html">
+                <label for="first-name">First Name <span class="required">*</span>
+                    <input type="text" id="first-name" name="first-name" required>
+                </label>
+                <label for="last-name">Last Name <span class="required">*</span>
+                    <input type="text" id="last-name" name="last-name" required>
+                </label>
+                <label for="title">Title/Position
+                    <input type="text" id="title" name="title" pattern="[A-Za-z\s-]{7,}" title="Only letters, hyphens, and spaces allowed, minimum 7 characters">
+                </label>
+                <label for="email">Email Address <span class="required">*</span>
+                    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+                </label>
+                <label for="phone">Mobile Phone Number <span class="required">*</span>
+                    <input type="tel" id="phone" name="phone" required>
+                </label>
+                <label for="business-name">Business/Organization Name <span class="required">*</span>
+                    <input type="text" id="business-name" name="business-name" required>
+                </label>
+                <label for="membership-level">Membership Level <span class="required">*</span>
+                    <select id="membership-level" name="membership-level" required>
+                        <option value="" disabled selected>Select a membership level</option>
+                        <option value="np-membership">NP Membership (Non-Profit, Free)</option>
+                        <option value="bronze-membership">Bronze Membership</option>
+                        <option value="silver-membership">Silver Membership</option>
+                        <option value="gold-membership">Gold Membership</option>
+                    </select>
+                </label>
+                <label for="business-description">Business/Organization Description
+                    <textarea id="business-description" name="business-description" rows="5"></textarea>
+                </label>
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                <input type="submit" value="Submit Application">
+            </form>
+        </section>
+        <aside class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <div class="benefit-level">
+                <h3>NP Membership (Non-Profit, Free)</h3>
+                <ul>
+                    <li>Access to networking events</li>
+                    <li>Listing in the chamber directory</li>
+                </ul>
+            </div>
+            <div class="benefit-level">
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li>All NP benefits</li>
+                    <li>Discounts on chamber events</li>
+                    <li>Basic advertising (e.g., newsletter mentions)</li>
+                </ul>
+            </div>
+            <div class="benefit-level">
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Priority event registration</li>
+                    <li>Featured advertising (e.g., website banner)</li>
+                    <li>Access to training workshops</li>
+                </ul>
+            </div>
+            <div class="benefit-level">
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Exclusive invitations to VIP events</li>
+                    <li>Spotlight position on the homepage</li>
+                    <li>Personalized business consultations</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-contact">
+                <div class="logo">
+                    <img src="images/members/logs/web logo.png" alt="Lilongwe Chamber of Commerce Logo">
+                </div>
+                <div class="contact-info">
+                    <p>Lilongwe Chamber of Commerce<br>123 Capital Road<br>Lilongwe, Malawi</p>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <footer class="commerce-footer">
-        <div class="footer-content">
-            <div class="footer-contact">
-                <h3>Lilongwe Chamber of Commerce</h3>
-                <p>City Center Plaza</p>
-                <p>Lilongwe, MW 78910</p>
-                <p>Phone: <a href="tel:+2659990000">+265-999-0000</a></p>
-                <p>Email: <a href="mailto:membership@lilongwechamber.org">membership@lilongwechamber.org</a></p>
-                <p><a href="#" class="map-link">View Map</a></p>
-            </div>
-            <div class="footer-text">
-                <p>©2025 Lilongwe Chamber of Commerce | <strong>Rex J Kapoloma</strong> | WDD 230 Project | Last Modification Date: <span id="last-update"></span></p>
+            <div>
+                <p>info@lilongwecc.org<br>+(265) 1234 5678<br><a href="#">Location Map</a></p>
             </div>
         </div>
+        <div class="footer-bottom">
+            <p>© 2022 Lilongwe Chamber | Rex J Kapoloma | WDD 230 Project | Last Modification: <span id="last-modified"></span></p>
+        </div>
     </footer>
-
-    <script>
-        // Hamburger Menu Toggle
-        document.querySelector('.hamburger').addEventListener('click', () => {
-            document.querySelector('.nav-menu').classList.toggle('active');
-        });
-
-        // Last Modification Date
-        const lastModified = new Date(document.lastModified);
-        const options = { 
-            year: 'numeric', 
-            month: 'long', 
-            day: 'numeric', 
-            hour: '2-digit', 
-            minute: '2-digit', 
-            second: '2-digit' 
-        };
-        document.getElementById('last-update').textContent = lastModified.toLocaleString('en-US', options);
-
-        // Set Timestamp for Form
-        document.getElementById('timestamp').value = new Date().toISOString();
-    </script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
